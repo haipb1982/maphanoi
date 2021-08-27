@@ -1,0 +1,2438 @@
+[
+    {
+      "id": 3984,
+      "name": "Thị trấn Quốc Oai",
+      "cityID": 26,
+      "districtID": 296,
+      "isDelete": false
+    },
+    {
+      "id": 4000,
+      "name": "Xã Cấn Hữu",
+      "cityID": 26,
+      "districtID": 296,
+      "isDelete": false
+    },
+    {
+      "id": 3996,
+      "name": "Xã Cộng Hòa",
+      "cityID": 26,
+      "districtID": 296,
+      "isDelete": false
+    },
+    {
+      "id": 3998,
+      "name": "Xã Đại Thành",
+      "cityID": 26,
+      "districtID": 296,
+      "isDelete": false
+    },
+    {
+      "id": 3992,
+      "name": "Xã Đồng Quang",
+      "cityID": 26,
+      "districtID": 296,
+      "isDelete": false
+    },
+    {
+      "id": 3983,
+      "name": "Xã Đông Xuân",
+      "cityID": 26,
+      "districtID": 296,
+      "isDelete": false
+    },
+    {
+      "id": 4003,
+      "name": "Xã Đông Yên",
+      "cityID": 26,
+      "districtID": 296,
+      "isDelete": false
+    },
+    {
+      "id": 4002,
+      "name": "Xã Hòa Thạch",
+      "cityID": 26,
+      "districtID": 296,
+      "isDelete": false
+    },
+    {
+      "id": 3990,
+      "name": "Xã Liệp Tuyết",
+      "cityID": 26,
+      "districtID": 296,
+      "isDelete": false
+    },
+    {
+      "id": 3995,
+      "name": "Xã Nghĩa Hương",
+      "cityID": 26,
+      "districtID": 296,
+      "isDelete": false
+    },
+    {
+      "id": 3988,
+      "name": "Xã Ngọc Liệp",
+      "cityID": 26,
+      "districtID": 296,
+      "isDelete": false
+    },
+    {
+      "id": 3989,
+      "name": "Xã Ngọc Mỹ",
+      "cityID": 26,
+      "districtID": 296,
+      "isDelete": false
+    },
+    {
+      "id": 3993,
+      "name": "Xã Phú Cát",
+      "cityID": 26,
+      "districtID": 296,
+      "isDelete": false
+    },
+    {
+      "id": 3999,
+      "name": "Xã Phú Mãn",
+      "cityID": 26,
+      "districtID": 296,
+      "isDelete": false
+    },
+    {
+      "id": 3986,
+      "name": "Xã Phượng Cách",
+      "cityID": 26,
+      "districtID": 296,
+      "isDelete": false
+    },
+    {
+      "id": 3985,
+      "name": "Xã Sài Sơn",
+      "cityID": 26,
+      "districtID": 296,
+      "isDelete": false
+    },
+    {
+      "id": 4001,
+      "name": "Xã Tân Hòa",
+      "cityID": 26,
+      "districtID": 296,
+      "isDelete": false
+    },
+    {
+      "id": 3997,
+      "name": "Xã Tân Phú",
+      "cityID": 26,
+      "districtID": 296,
+      "isDelete": false
+    },
+    {
+      "id": 3991,
+      "name": "Xã Thạch Thán",
+      "cityID": 26,
+      "districtID": 296,
+      "isDelete": false
+    },
+    {
+      "id": 3994,
+      "name": "Xã Tuyết Nghĩa",
+      "cityID": 26,
+      "districtID": 296,
+      "isDelete": false
+    },
+    {
+      "id": 3987,
+      "name": "Xã Yên Sơn",
+      "cityID": 26,
+      "districtID": 296,
+      "isDelete": false
+    },
+    {
+      "id": 3734,
+      "name": "Thị trấn Sóc Sơn",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3743,
+      "name": "Xã Bắc Phú",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3735,
+      "name": "Xã Bắc Sơn",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3754,
+      "name": "Xã Đông Xuân",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3752,
+      "name": "Xã Đức Hoà",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3746,
+      "name": "Xã Hiền Ninh",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3737,
+      "name": "Xã Hồng Kỳ",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3755,
+      "name": "Xã Kim Lũ",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3751,
+      "name": "Xã Mai Đình",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3741,
+      "name": "Xã Minh Phú",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3736,
+      "name": "Xã Minh Trí",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3738,
+      "name": "Xã Nam Sơn",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3756,
+      "name": "Xã Phú Cường",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3742,
+      "name": "Xã Phù Linh",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3758,
+      "name": "Xã Phù Lỗ",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3757,
+      "name": "Xã Phú Minh",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3745,
+      "name": "Xã Quang Tiến",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3747,
+      "name": "Xã Tân Dân",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3740,
+      "name": "Xã Tân Hưng",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3744,
+      "name": "Xã Tân Minh",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3753,
+      "name": "Xã Thanh Xuân",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3748,
+      "name": "Xã Tiên Dược",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3739,
+      "name": "Xã Trung Giã",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3749,
+      "name": "Xã Việt Long",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3750,
+      "name": "Xã Xuân Giang",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 3759,
+      "name": "Xã Xuân Thu",
+      "cityID": 26,
+      "districtID": 283,
+      "isDelete": false
+    },
+    {
+      "id": 4007,
+      "name": "Thị trấn Liên Quan",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 4024,
+      "name": "Xã Bình Phú",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 4016,
+      "name": "Xã Bình Yên",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 4009,
+      "name": "Xã Cẩm Yên",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 4019,
+      "name": "Xã Cần Kiệm",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 4013,
+      "name": "Xã Canh Nậu",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 4017,
+      "name": "Xã Chàng Sơn",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 4008,
+      "name": "Xã Đại Đồng",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 4015,
+      "name": "Xã Dị Nậu",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 4026,
+      "name": "Xã Đồng Trúc",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 4025,
+      "name": "Xã Hạ Bằng",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 4012,
+      "name": "Xã Hương Ngải",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 4020,
+      "name": "Xã Hữu Bằng",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 4014,
+      "name": "Xã Kim Quan",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 4010,
+      "name": "Xã Lại Thượng",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 4011,
+      "name": "Xã Phú Kim",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 4021,
+      "name": "Xã Phùng Xá",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 4022,
+      "name": "Xã Tân Xã",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 4018,
+      "name": "Xã Thạch Hoà",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 4023,
+      "name": "Xã Thạch Xá",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 4006,
+      "name": "Xã Tiến Xuân",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 4005,
+      "name": "Xã Yên Bình",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 4004,
+      "name": "Xã Yên Trung",
+      "cityID": 26,
+      "districtID": 297,
+      "isDelete": false
+    },
+    {
+      "id": 3607,
+      "name": "Thị trấn Kim Bài",
+      "cityID": 26,
+      "districtID": 298,
+      "isDelete": false
+    },
+    {
+      "id": 4060,
+      "name": "Xã Bích Hòa",
+      "cityID": 26,
+      "districtID": 298,
+      "isDelete": false
+    },
+    {
+      "id": 4063,
+      "name": "Xã Bình Minh",
+      "cityID": 26,
+      "districtID": 298,
+      "isDelete": false
+    },
+    {
+      "id": 4076,
+      "name": "Xã Cao Dương",
+      "cityID": 26,
+      "districtID": 298,
+      "isDelete": false
+    },
+    {
+      "id": 4062,
+      "name": "Xã Cao Viên",
+      "cityID": 26,
+      "districtID": 298,
+      "isDelete": false
+    },
+    {
+      "id": 4059,
+      "name": "Xã Cự Khê",
+      "cityID": 26,
+      "districtID": 298,
+      "isDelete": false
+    },
+    {
+      "id": 4074,
+      "name": "Xã Dân Hòa",
+      "cityID": 26,
+      "districtID": 298,
+      "isDelete": false
+    },
+    {
+      "id": 4069,
+      "name": "Xã Đỗ Động",
+      "cityID": 26,
+      "districtID": 298,
+      "isDelete": false
+    },
+    {
+      "id": 4078,
+      "name": "Xã Hồng Dương",
+      "cityID": 26,
+      "districtID": 298,
+      "isDelete": false
+    },
+    {
+      "id": 4070,
+      "name": "Xã Kim An",
+      "cityID": 26,
+      "districtID": 298,
+      "isDelete": false
+    },
+    {
+      "id": 4071,
+      "name": "Xã Kim Thư",
+      "cityID": 26,
+      "districtID": 298,
+      "isDelete": false
+    },
+    {
+      "id": 4075,
+      "name": "Xã Liên Châu",
+      "cityID": 26,
+      "districtID": 298,
+      "isDelete": false
+    },
+    {
+      "id": 4061,
+      "name": "Xã Mỹ Hưng",
+      "cityID": 26,
+      "districtID": 298,
+      "isDelete": false
+    },
+    {
+      "id": 4072,
+      "name": "Xã Phương Trung",
+      "cityID": 26,
+      "districtID": 298,
+      "isDelete": false
+    },
+    {
+      "id": 4064,
+      "name": "Xã Tam Hưng",
+      "cityID": 26,
+      "districtID": 298,
+      "isDelete": false
+    },
+    {
+      "id": 4073,
+      "name": "Xã Tân Ước",
+      "cityID": 26,
+      "districtID": 298,
+      "isDelete": false
+    },
+    {
+      "id": 4065,
+      "name": "Xã Thanh Cao",
+      "cityID": 26,
+      "districtID": 298,
+      "isDelete": false
+    },
+    {
+      "id": 4067,
+      "name": "Xã Thanh Mai",
+      "cityID": 26,
+      "districtID": 298,
+      "isDelete": false
+    },
+    {
+      "id": 4066,
+      "name": "Xã Thanh Thùy",
+      "cityID": 26,
+      "districtID": 298,
+      "isDelete": false
+    },
+    {
+      "id": 4068,
+      "name": "Xã Thanh Văn",
+      "cityID": 26,
+      "districtID": 298,
+      "isDelete": false
+    },
+    {
+      "id": 4077,
+      "name": "Xã Xuân Dương",
+      "cityID": 26,
+      "districtID": 298,
+      "isDelete": false
+    },
+    {
+      "id": 3816,
+      "name": "Thị trấn Văn Điển",
+      "cityID": 26,
+      "districtID": 287,
+      "isDelete": false
+    },
+    {
+      "id": 3829,
+      "name": "Xã Đại áng",
+      "cityID": 26,
+      "districtID": 287,
+      "isDelete": false
+    },
+    {
+      "id": 3831,
+      "name": "Xã Đông Mỹ",
+      "cityID": 26,
+      "districtID": 287,
+      "isDelete": false
+    },
+    {
+      "id": 3826,
+      "name": "Xã Duyên Hà",
+      "cityID": 26,
+      "districtID": 287,
+      "isDelete": false
+    },
+    {
+      "id": 3820,
+      "name": "Xã Hữu Hoà",
+      "cityID": 26,
+      "districtID": 287,
+      "isDelete": false
+    },
+    {
+      "id": 3830,
+      "name": "Xã Liên Ninh",
+      "cityID": 26,
+      "districtID": 287,
+      "isDelete": false
+    },
+    {
+      "id": 3827,
+      "name": "Xã Ngọc Hồi",
+      "cityID": 26,
+      "districtID": 287,
+      "isDelete": false
+    },
+    {
+      "id": 3825,
+      "name": "Xã Ngũ Hiệp",
+      "cityID": 26,
+      "districtID": 287,
+      "isDelete": false
+    },
+    {
+      "id": 3819,
+      "name": "Xã Tả Thanh Oai",
+      "cityID": 26,
+      "districtID": 287,
+      "isDelete": false
+    },
+    {
+      "id": 3821,
+      "name": "Xã Tam Hiệp",
+      "cityID": 26,
+      "districtID": 287,
+      "isDelete": false
+    },
+    {
+      "id": 3817,
+      "name": "Xã Tân Triều",
+      "cityID": 26,
+      "districtID": 287,
+      "isDelete": false
+    },
+    {
+      "id": 3818,
+      "name": "Xã Thanh Liệt",
+      "cityID": 26,
+      "districtID": 287,
+      "isDelete": false
+    },
+    {
+      "id": 3822,
+      "name": "Xã Tứ Hiệp",
+      "cityID": 26,
+      "districtID": 287,
+      "isDelete": false
+    },
+    {
+      "id": 3828,
+      "name": "Xã Vạn Phúc",
+      "cityID": 26,
+      "districtID": 287,
+      "isDelete": false
+    },
+    {
+      "id": 3824,
+      "name": "Xã Vĩnh Quỳnh",
+      "cityID": 26,
+      "districtID": 287,
+      "isDelete": false
+    },
+    {
+      "id": 3823,
+      "name": "Xã Yên Mỹ",
+      "cityID": 26,
+      "districtID": 287,
+      "isDelete": false
+    },
+    {
+      "id": 4079,
+      "name": "Thị trấn Thường Tín",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4097,
+      "name": "Xã Chương Dương",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4101,
+      "name": "Xã Dũng Tiến",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4082,
+      "name": "Xã Duyên Thái",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4093,
+      "name": "Xã Hà Hồi",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4086,
+      "name": "Xã Hiền Giang",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4084,
+      "name": "Xã Hòa Bình",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4087,
+      "name": "Xã Hồng Vân",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4083,
+      "name": "Xã Khánh Hà",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4099,
+      "name": "Xã Lê Lợi",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4089,
+      "name": "Xã Liên Phương",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4107,
+      "name": "Xã Minh Cường",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4103,
+      "name": "Xã Nghiêm Xuyên",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4095,
+      "name": "Xã Nguyễn Trãi",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4081,
+      "name": "Xã Nhị Khê",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4080,
+      "name": "Xã Ninh Sở",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4096,
+      "name": "Xã Quất Động",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4098,
+      "name": "Xã Tân Minh",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4100,
+      "name": "Xã Thắng Lợi",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4102,
+      "name": "Xã Thống Nhất",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4094,
+      "name": "Xã Thư Phú",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4092,
+      "name": "Xã Tiền Phong",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4104,
+      "name": "Xã Tô Hiệu",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4091,
+      "name": "Xã Tự Nhiên",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4085,
+      "name": "Xã Văn Bình",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4106,
+      "name": "Xã Vạn Điểm",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4090,
+      "name": "Xã Văn Phú",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4088,
+      "name": "Xã Vân Tảo",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4105,
+      "name": "Xã Văn Tự",
+      "cityID": 26,
+      "districtID": 299,
+      "isDelete": false
+    },
+    {
+      "id": 4135,
+      "name": "Thị trấn Vân Đình",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4141,
+      "name": "Xã Cao Thành",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4161,
+      "name": "Xã Đại Cường",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4158,
+      "name": "Xã Đại Hùng",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4157,
+      "name": "Xã Đội Bình",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4159,
+      "name": "Xã Đông Lỗ",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4147,
+      "name": "Xã Đồng Tân",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4144,
+      "name": "Xã Đồng Tiến",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4151,
+      "name": "Xã Hòa Lâm",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4155,
+      "name": "Xã Hòa Nam",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4156,
+      "name": "Xã Hòa Phú",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4138,
+      "name": "Xã Hoa Sơn",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4152,
+      "name": "Xã Hòa Xá",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4163,
+      "name": "Xã Hồng Quang",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4154,
+      "name": "Xã Kim Đường",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4142,
+      "name": "Xã Liên Bạt",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4162,
+      "name": "Xã Lưu Hoàng",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4150,
+      "name": "Xã Minh Đức",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4160,
+      "name": "Xã Phù Lưu",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4145,
+      "name": "Xã Phương Tú",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4139,
+      "name": "Xã Quảng Phú Cầu",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4143,
+      "name": "Xã Sơn Công",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4148,
+      "name": "Xã Tảo Dương Văn",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4153,
+      "name": "Xã Trầm Lộng",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4146,
+      "name": "Xã Trung Tú",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4140,
+      "name": "Xã Trường Thịnh",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4149,
+      "name": "Xã Vạn Thái",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4136,
+      "name": "Xã Viên An",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 4137,
+      "name": "Xã Viên Nội",
+      "cityID": 26,
+      "districtID": 300,
+      "isDelete": false
+    },
+    {
+      "id": 3611,
+      "name": "Phường Cống Vị",
+      "cityID": 26,
+      "districtID": 274,
+      "isDelete": false
+    },
+    {
+      "id": 3616,
+      "name": "Phường Điện Biên",
+      "cityID": 26,
+      "districtID": 274,
+      "isDelete": false
+    },
+    {
+      "id": 3617,
+      "name": "Phường Đội Cấn",
+      "cityID": 26,
+      "districtID": 274,
+      "isDelete": false
+    },
+    {
+      "id": 3620,
+      "name": "Phường Giảng Võ",
+      "cityID": 26,
+      "districtID": 274,
+      "isDelete": false
+    },
+    {
+      "id": 3619,
+      "name": "Phường Kim Mã",
+      "cityID": 26,
+      "districtID": 274,
+      "isDelete": false
+    },
+    {
+      "id": 3612,
+      "name": "Phường Liễu Giai",
+      "cityID": 26,
+      "districtID": 274,
+      "isDelete": false
+    },
+    {
+      "id": 3615,
+      "name": "Phường Ngọc Hà",
+      "cityID": 26,
+      "districtID": 274,
+      "isDelete": false
+    },
+    {
+      "id": 3618,
+      "name": "Phường Ngọc Khánh",
+      "cityID": 26,
+      "districtID": 274,
+      "isDelete": false
+    },
+    {
+      "id": 3613,
+      "name": "Phường Nguyễn Trung Trự",
+      "cityID": 26,
+      "districtID": 274,
+      "isDelete": false
+    },
+    {
+      "id": 3608,
+      "name": "Phường Phúc Xá",
+      "cityID": 26,
+      "districtID": 274,
+      "isDelete": false
+    },
+    {
+      "id": 3614,
+      "name": "Phường Quán Thánh",
+      "cityID": 26,
+      "districtID": 274,
+      "isDelete": false
+    },
+    {
+      "id": 3621,
+      "name": "Phường Thành Công",
+      "cityID": 26,
+      "districtID": 274,
+      "isDelete": false
+    },
+    {
+      "id": 3609,
+      "name": "Phường Trúc Bạch",
+      "cityID": 26,
+      "districtID": 274,
+      "isDelete": false
+    },
+    {
+      "id": 3610,
+      "name": "Phường Vĩnh Phúc",
+      "cityID": 26,
+      "districtID": 274,
+      "isDelete": false
+    },
+    {
+      "id": 3841,
+      "name": "Phường Cổ Nhuế 1",
+      "cityID": 26,
+      "districtID": 727,
+      "isDelete": false
+    },
+    {
+      "id": 3842,
+      "name": "Phường Cổ Nhuế 2",
+      "cityID": 26,
+      "districtID": 727,
+      "isDelete": false
+    },
+    {
+      "id": 3834,
+      "name": "Phường Đông Ngạc",
+      "cityID": 26,
+      "districtID": 727,
+      "isDelete": false
+    },
+    {
+      "id": 3835,
+      "name": "Phường Đức Thắng",
+      "cityID": 26,
+      "districtID": 727,
+      "isDelete": false
+    },
+    {
+      "id": 3833,
+      "name": "Phường Liên Mạc",
+      "cityID": 26,
+      "districtID": 727,
+      "isDelete": false
+    },
+    {
+      "id": 3840,
+      "name": "Phường Minh Khai",
+      "cityID": 26,
+      "districtID": 727,
+      "isDelete": false
+    },
+    {
+      "id": 3843,
+      "name": "Phường Phú Diễn",
+      "cityID": 26,
+      "districtID": 727,
+      "isDelete": false
+    },
+    {
+      "id": 3844,
+      "name": "Phường Phúc Diễn",
+      "cityID": 26,
+      "districtID": 727,
+      "isDelete": false
+    },
+    {
+      "id": 3837,
+      "name": "Phường Tây Tựu",
+      "cityID": 26,
+      "districtID": 727,
+      "isDelete": false
+    },
+    {
+      "id": 3832,
+      "name": "Phường Thượng Cát",
+      "cityID": 26,
+      "districtID": 727,
+      "isDelete": false
+    },
+    {
+      "id": 3836,
+      "name": "Phường Thụy Phương",
+      "cityID": 26,
+      "districtID": 727,
+      "isDelete": false
+    },
+    {
+      "id": 3838,
+      "name": "Phường Xuân Đỉnh",
+      "cityID": 26,
+      "districtID": 727,
+      "isDelete": false
+    },
+    {
+      "id": 3839,
+      "name": "Phường Xuân Tảo",
+      "cityID": 26,
+      "districtID": 727,
+      "isDelete": false
+    },
+    {
+      "id": 3806,
+      "name": "Phường Cầu Diễn",
+      "cityID": 26,
+      "districtID": 728,
+      "isDelete": false
+    },
+    {
+      "id": 3814,
+      "name": "Phường Đại Mỗ",
+      "cityID": 26,
+      "districtID": 728,
+      "isDelete": false
+    },
+    {
+      "id": 3812,
+      "name": "Phường Mễ Trì",
+      "cityID": 26,
+      "districtID": 728,
+      "isDelete": false
+    },
+    {
+      "id": 3809,
+      "name": "Phường Mỹ Đình 1",
+      "cityID": 26,
+      "districtID": 728,
+      "isDelete": false
+    },
+    {
+      "id": 3810,
+      "name": "Phường Mỹ Đình 2",
+      "cityID": 26,
+      "districtID": 728,
+      "isDelete": false
+    },
+    {
+      "id": 3813,
+      "name": "Phường Phú Đô",
+      "cityID": 26,
+      "districtID": 728,
+      "isDelete": false
+    },
+    {
+      "id": 3808,
+      "name": "Phường Phương Canh",
+      "cityID": 26,
+      "districtID": 728,
+      "isDelete": false
+    },
+    {
+      "id": 3811,
+      "name": "Phường Tây Mỗ",
+      "cityID": 26,
+      "districtID": 728,
+      "isDelete": false
+    },
+    {
+      "id": 3815,
+      "name": "Phường Trung Văn",
+      "cityID": 26,
+      "districtID": 728,
+      "isDelete": false
+    },
+    {
+      "id": 3807,
+      "name": "Phường Xuân Phương",
+      "cityID": 26,
+      "districtID": 728,
+      "isDelete": false
+    },
+    {
+      "id": 3670,
+      "name": "Phường Cát Linh",
+      "cityID": 26,
+      "districtID": 279,
+      "isDelete": false
+    },
+    {
+      "id": 3676,
+      "name": "Phường Hàng Bột",
+      "cityID": 26,
+      "districtID": 279,
+      "isDelete": false
+    },
+    {
+      "id": 3678,
+      "name": "Phường Khâm Thiên",
+      "cityID": 26,
+      "districtID": 279,
+      "isDelete": false
+    },
+    {
+      "id": 3690,
+      "name": "Phường Khương Thượng",
+      "cityID": 26,
+      "districtID": 279,
+      "isDelete": false
+    },
+    {
+      "id": 3687,
+      "name": "Phường Kim Liên",
+      "cityID": 26,
+      "districtID": 279,
+      "isDelete": false
+    },
+    {
+      "id": 3677,
+      "name": "Phường Láng Hạ",
+      "cityID": 26,
+      "districtID": 279,
+      "isDelete": false
+    },
+    {
+      "id": 3673,
+      "name": "Phường Láng Thượng",
+      "cityID": 26,
+      "districtID": 279,
+      "isDelete": false
+    },
+    {
+      "id": 3680,
+      "name": "Phường Nam Đồng",
+      "cityID": 26,
+      "districtID": 279,
+      "isDelete": false
+    },
+    {
+      "id": 3689,
+      "name": "Phường Ngã Tư Sở",
+      "cityID": 26,
+      "districtID": 279,
+      "isDelete": false
+    },
+    {
+      "id": 3674,
+      "name": "Phường Ô Chợ Dừa",
+      "cityID": 26,
+      "districtID": 279,
+      "isDelete": false
+    },
+    {
+      "id": 3684,
+      "name": "Phường Phương Liên",
+      "cityID": 26,
+      "districtID": 279,
+      "isDelete": false
+    },
+    {
+      "id": 3688,
+      "name": "Phường Phương Mai",
+      "cityID": 26,
+      "districtID": 279,
+      "isDelete": false
+    },
+    {
+      "id": 3682,
+      "name": "Phường Quang Trung",
+      "cityID": 26,
+      "districtID": 279,
+      "isDelete": false
+    },
+    {
+      "id": 3672,
+      "name": "Phường Quốc Tử Giám",
+      "cityID": 26,
+      "districtID": 279,
+      "isDelete": false
+    },
+    {
+      "id": 3685,
+      "name": "Phường Thịnh Quang",
+      "cityID": 26,
+      "districtID": 279,
+      "isDelete": false
+    },
+    {
+      "id": 3679,
+      "name": "Phường Thổ Quan",
+      "cityID": 26,
+      "districtID": 279,
+      "isDelete": false
+    },
+    {
+      "id": 3683,
+      "name": "Phường Trung Liệt",
+      "cityID": 26,
+      "districtID": 279,
+      "isDelete": false
+    },
+    {
+      "id": 3681,
+      "name": "Phường Trung Phụng",
+      "cityID": 26,
+      "districtID": 279,
+      "isDelete": false
+    },
+    {
+      "id": 3686,
+      "name": "Phường Trung Tự",
+      "cityID": 26,
+      "districtID": 279,
+      "isDelete": false
+    },
+    {
+      "id": 3675,
+      "name": "Phường Văn Chương",
+      "cityID": 26,
+      "districtID": 279,
+      "isDelete": false
+    },
+    {
+      "id": 3671,
+      "name": "Phường Văn Miếu",
+      "cityID": 26,
+      "districtID": 279,
+      "isDelete": false
+    },
+    {
+      "id": 3879,
+      "name": "Phường Biên Giang",
+      "cityID": 26,
+      "districtID": 301,
+      "isDelete": false
+    },
+    {
+      "id": 3878,
+      "name": "Phường Đồng Mai",
+      "cityID": 26,
+      "districtID": 301,
+      "isDelete": false
+    },
+    {
+      "id": 3877,
+      "name": "Phường Dương Nội",
+      "cityID": 26,
+      "districtID": 301,
+      "isDelete": false
+    },
+    {
+      "id": 3872,
+      "name": "Phường Hà Cầu",
+      "cityID": 26,
+      "districtID": 301,
+      "isDelete": false
+    },
+    {
+      "id": 3874,
+      "name": "Phường Kiến Hưng",
+      "cityID": 26,
+      "districtID": 301,
+      "isDelete": false
+    },
+    {
+      "id": 3869,
+      "name": "Phường La Khê",
+      "cityID": 26,
+      "districtID": 301,
+      "isDelete": false
+    },
+    {
+      "id": 3864,
+      "name": "Phường Mộ Lao",
+      "cityID": 26,
+      "districtID": 301,
+      "isDelete": false
+    },
+    {
+      "id": 3863,
+      "name": "Phường Nguyễn Trãi",
+      "cityID": 26,
+      "districtID": 301,
+      "isDelete": false
+    },
+    {
+      "id": 3870,
+      "name": "Phường Phú La",
+      "cityID": 26,
+      "districtID": 301,
+      "isDelete": false
+    },
+    {
+      "id": 3875,
+      "name": "Phường Phú Lãm",
+      "cityID": 26,
+      "districtID": 301,
+      "isDelete": false
+    },
+    {
+      "id": 3876,
+      "name": "Phường Phú Lương",
+      "cityID": 26,
+      "districtID": 301,
+      "isDelete": false
+    },
+    {
+      "id": 3871,
+      "name": "Phường Phúc La",
+      "cityID": 26,
+      "districtID": 301,
+      "isDelete": false
+    },
+    {
+      "id": 3868,
+      "name": "Phường Quang Trung",
+      "cityID": 26,
+      "districtID": 301,
+      "isDelete": false
+    },
+    {
+      "id": 3866,
+      "name": "Phường Vạn Phúc",
+      "cityID": 26,
+      "districtID": 301,
+      "isDelete": false
+    },
+    {
+      "id": 3865,
+      "name": "Phường Văn Quán",
+      "cityID": 26,
+      "districtID": 301,
+      "isDelete": false
+    },
+    {
+      "id": 3873,
+      "name": "Phường Yên Nghĩa",
+      "cityID": 26,
+      "districtID": 301,
+      "isDelete": false
+    },
+    {
+      "id": 3867,
+      "name": "Phường Yết Kiêu",
+      "cityID": 26,
+      "districtID": 301,
+      "isDelete": false
+    },
+    {
+      "id": 3692,
+      "name": "Phường Bạch Đằng",
+      "cityID": 26,
+      "districtID": 280,
+      "isDelete": false
+    },
+    {
+      "id": 3701,
+      "name": "Phường Bách Khoa",
+      "cityID": 26,
+      "districtID": 280,
+      "isDelete": false
+    },
+    {
+      "id": 3704,
+      "name": "Phường Bạch Mai",
+      "cityID": 26,
+      "districtID": 280,
+      "isDelete": false
+    },
+    {
+      "id": 3700,
+      "name": "Phường Cầu Dền",
+      "cityID": 26,
+      "districtID": 280,
+      "isDelete": false
+    },
+    {
+      "id": 3697,
+      "name": "Phường Đống Mác",
+      "cityID": 26,
+      "districtID": 280,
+      "isDelete": false
+    },
+    {
+      "id": 3695,
+      "name": "Phường Đồng Nhân",
+      "cityID": 26,
+      "districtID": 280,
+      "isDelete": false
+    },
+    {
+      "id": 3702,
+      "name": "Phường Đồng Tâm",
+      "cityID": 26,
+      "districtID": 280,
+      "isDelete": false
+    },
+    {
+      "id": 3694,
+      "name": "Phường Lê Đại Hành",
+      "cityID": 26,
+      "districtID": 280,
+      "isDelete": false
+    },
+    {
+      "id": 3707,
+      "name": "Phường Minh Khai",
+      "cityID": 26,
+      "districtID": 280,
+      "isDelete": false
+    },
+    {
+      "id": 3691,
+      "name": "Phường Nguyễn Du",
+      "cityID": 26,
+      "districtID": 280,
+      "isDelete": false
+    },
+    {
+      "id": 3693,
+      "name": "Phường Phạm Đình Hổ",
+      "cityID": 26,
+      "districtID": 280,
+      "isDelete": false
+    },
+    {
+      "id": 3696,
+      "name": "Phường Phố Huế",
+      "cityID": 26,
+      "districtID": 280,
+      "isDelete": false
+    },
+    {
+      "id": 3706,
+      "name": "Phường Quỳnh Lôi",
+      "cityID": 26,
+      "districtID": 280,
+      "isDelete": false
+    },
+    {
+      "id": 3705,
+      "name": "Phường Quỳnh Mai",
+      "cityID": 26,
+      "districtID": 280,
+      "isDelete": false
+    },
+    {
+      "id": 3698,
+      "name": "Phường Thanh Lương",
+      "cityID": 26,
+      "districtID": 280,
+      "isDelete": false
+    },
+    {
+      "id": 3699,
+      "name": "Phường Thanh Nhàn",
+      "cityID": 26,
+      "districtID": 280,
+      "isDelete": false
+    },
+    {
+      "id": 3708,
+      "name": "Phường Trương Định",
+      "cityID": 26,
+      "districtID": 280,
+      "isDelete": false
+    },
+    {
+      "id": 3703,
+      "name": "Phường Vĩnh Tuy",
+      "cityID": 26,
+      "districtID": 280,
+      "isDelete": false
+    },
+    {
+      "id": 3632,
+      "name": "Phường Chương Dương",
+      "cityID": 26,
+      "districtID": 275,
+      "isDelete": false
+    },
+    {
+      "id": 3628,
+      "name": "Phường Cửa Đông",
+      "cityID": 26,
+      "districtID": 275,
+      "isDelete": false
+    },
+    {
+      "id": 3634,
+      "name": "Phường Cửa Nam",
+      "cityID": 26,
+      "districtID": 275,
+      "isDelete": false
+    },
+    {
+      "id": 3623,
+      "name": "Phường Đồng Xuân",
+      "cityID": 26,
+      "districtID": 275,
+      "isDelete": false
+    },
+    {
+      "id": 3630,
+      "name": "Phường Hàng Bạc",
+      "cityID": 26,
+      "districtID": 275,
+      "isDelete": false
+    },
+    {
+      "id": 3639,
+      "name": "Phường Hàng Bài",
+      "cityID": 26,
+      "districtID": 275,
+      "isDelete": false
+    },
+    {
+      "id": 3627,
+      "name": "Phường Hàng Bồ",
+      "cityID": 26,
+      "districtID": 275,
+      "isDelete": false
+    },
+    {
+      "id": 3635,
+      "name": "Phường Hàng Bông",
+      "cityID": 26,
+      "districtID": 275,
+      "isDelete": false
+    },
+    {
+      "id": 3625,
+      "name": "Phường Hàng Buồm",
+      "cityID": 26,
+      "districtID": 275,
+      "isDelete": false
+    },
+    {
+      "id": 3626,
+      "name": "Phường Hàng Đào",
+      "cityID": 26,
+      "districtID": 275,
+      "isDelete": false
+    },
+    {
+      "id": 3631,
+      "name": "Phường Hàng Gai",
+      "cityID": 26,
+      "districtID": 275,
+      "isDelete": false
+    },
+    {
+      "id": 3624,
+      "name": "Phường Hàng Mã",
+      "cityID": 26,
+      "districtID": 275,
+      "isDelete": false
+    },
+    {
+      "id": 3633,
+      "name": "Phường Hàng Trống",
+      "cityID": 26,
+      "districtID": 275,
+      "isDelete": false
+    },
+    {
+      "id": 3629,
+      "name": "Phường Lý Thái Tổ",
+      "cityID": 26,
+      "districtID": 275,
+      "isDelete": false
+    },
+    {
+      "id": 3638,
+      "name": "Phường Phan Chu Trinh",
+      "cityID": 26,
+      "districtID": 275,
+      "isDelete": false
+    },
+    {
+      "id": 3622,
+      "name": "Phường Phúc Tân",
+      "cityID": 26,
+      "districtID": 275,
+      "isDelete": false
+    },
+    {
+      "id": 3637,
+      "name": "Phường Trần Hưng Đạo",
+      "cityID": 26,
+      "districtID": 275,
+      "isDelete": false
+    },
+    {
+      "id": 3636,
+      "name": "Phường Tràng Tiền",
+      "cityID": 26,
+      "districtID": 275,
+      "isDelete": false
+    },
+    {
+      "id": 3714,
+      "name": "Phường Đại Kim",
+      "cityID": 26,
+      "districtID": 281,
+      "isDelete": false
+    },
+    {
+      "id": 3711,
+      "name": "Phường Định Công",
+      "cityID": 26,
+      "districtID": 281,
+      "isDelete": false
+    },
+    {
+      "id": 3717,
+      "name": "Phường Giáp Bát",
+      "cityID": 26,
+      "districtID": 281,
+      "isDelete": false
+    },
+    {
+      "id": 3721,
+      "name": "Phường Hoàng Liệt",
+      "cityID": 26,
+      "districtID": 281,
+      "isDelete": false
+    },
+    {
+      "id": 3716,
+      "name": "Phường Hoàng Văn Thụ",
+      "cityID": 26,
+      "districtID": 281,
+      "isDelete": false
+    },
+    {
+      "id": 3718,
+      "name": "Phường Lĩnh Nam",
+      "cityID": 26,
+      "districtID": 281,
+      "isDelete": false
+    },
+    {
+      "id": 3712,
+      "name": "Phường Mai Động",
+      "cityID": 26,
+      "districtID": 281,
+      "isDelete": false
+    },
+    {
+      "id": 3715,
+      "name": "Phường Tân Mai",
+      "cityID": 26,
+      "districtID": 281,
+      "isDelete": false
+    },
+    {
+      "id": 3709,
+      "name": "Phường Thanh Trì",
+      "cityID": 26,
+      "districtID": 281,
+      "isDelete": false
+    },
+    {
+      "id": 3719,
+      "name": "Phường Thịnh Liệt",
+      "cityID": 26,
+      "districtID": 281,
+      "isDelete": false
+    },
+    {
+      "id": 3720,
+      "name": "Phường Trần Phú",
+      "cityID": 26,
+      "districtID": 281,
+      "isDelete": false
+    },
+    {
+      "id": 3713,
+      "name": "Phường Tương Mai",
+      "cityID": 26,
+      "districtID": 281,
+      "isDelete": false
+    },
+    {
+      "id": 3710,
+      "name": "Phường Vĩnh Hưng",
+      "cityID": 26,
+      "districtID": 281,
+      "isDelete": false
+    },
+    {
+      "id": 3722,
+      "name": "Phường Yên Sở",
+      "cityID": 26,
+      "districtID": 281,
+      "isDelete": false
+    },
+    {
+      "id": 3656,
+      "name": "Phường Bồ Đề",
+      "cityID": 26,
+      "districtID": 277,
+      "isDelete": false
+    },
+    {
+      "id": 3661,
+      "name": "Phường Cự Khối",
+      "cityID": 26,
+      "districtID": 277,
+      "isDelete": false
+    },
+    {
+      "id": 3651,
+      "name": "Phường Đức Giang",
+      "cityID": 26,
+      "districtID": 277,
+      "isDelete": false
+    },
+    {
+      "id": 3653,
+      "name": "Phường Gia Thụy",
+      "cityID": 26,
+      "districtID": 277,
+      "isDelete": false
+    },
+    {
+      "id": 3650,
+      "name": "Phường Giang Biên",
+      "cityID": 26,
+      "districtID": 277,
+      "isDelete": false
+    },
+    {
+      "id": 3658,
+      "name": "Phường Long Biên",
+      "cityID": 26,
+      "districtID": 277,
+      "isDelete": false
+    },
+    {
+      "id": 3654,
+      "name": "Phường Ngọc Lâm",
+      "cityID": 26,
+      "districtID": 277,
+      "isDelete": false
+    },
+    {
+      "id": 3649,
+      "name": "Phường Ngọc Thụy",
+      "cityID": 26,
+      "districtID": 277,
+      "isDelete": false
+    },
+    {
+      "id": 3660,
+      "name": "Phường Phúc Đồng",
+      "cityID": 26,
+      "districtID": 277,
+      "isDelete": false
+    },
+    {
+      "id": 3655,
+      "name": "Phường Phúc Lợi",
+      "cityID": 26,
+      "districtID": 277,
+      "isDelete": false
+    },
+    {
+      "id": 3657,
+      "name": "Phường Sài Đồng",
+      "cityID": 26,
+      "districtID": 277,
+      "isDelete": false
+    },
+    {
+      "id": 3659,
+      "name": "Phường Thạch Bàn",
+      "cityID": 26,
+      "districtID": 277,
+      "isDelete": false
+    },
+    {
+      "id": 3648,
+      "name": "Phường Thượng Thanh",
+      "cityID": 26,
+      "districtID": 277,
+      "isDelete": false
+    },
+    {
+      "id": 3652,
+      "name": "Phường Việt Hưng",
+      "cityID": 26,
+      "districtID": 277,
+      "isDelete": false
+    },
+    {
+      "id": 3806,
+      "name": "Phường Cầu Diễn",
+      "cityID": 26,
+      "districtID": 728,
+      "isDelete": false
+    },
+    {
+      "id": 3814,
+      "name": "Phường Đại Mỗ",
+      "cityID": 26,
+      "districtID": 728,
+      "isDelete": false
+    },
+    {
+      "id": 3812,
+      "name": "Phường Mễ Trì",
+      "cityID": 26,
+      "districtID": 728,
+      "isDelete": false
+    },
+    {
+      "id": 3809,
+      "name": "Phường Mỹ Đình 1",
+      "cityID": 26,
+      "districtID": 728,
+      "isDelete": false
+    },
+    {
+      "id": 3810,
+      "name": "Phường Mỹ Đình 2",
+      "cityID": 26,
+      "districtID": 728,
+      "isDelete": false
+    },
+    {
+      "id": 3813,
+      "name": "Phường Phú Đô",
+      "cityID": 26,
+      "districtID": 728,
+      "isDelete": false
+    },
+    {
+      "id": 3808,
+      "name": "Phường Phương Canh",
+      "cityID": 26,
+      "districtID": 728,
+      "isDelete": false
+    },
+    {
+      "id": 3811,
+      "name": "Phường Tây Mỗ",
+      "cityID": 26,
+      "districtID": 728,
+      "isDelete": false
+    },
+    {
+      "id": 3815,
+      "name": "Phường Trung Văn",
+      "cityID": 26,
+      "districtID": 728,
+      "isDelete": false
+    },
+    {
+      "id": 3807,
+      "name": "Phường Xuân Phương",
+      "cityID": 26,
+      "districtID": 728,
+      "isDelete": false
+    },
+    {
+      "id": 3646,
+      "name": "Phường Bưởi",
+      "cityID": 26,
+      "districtID": 276,
+      "isDelete": false
+    },
+    {
+      "id": 3641,
+      "name": "Phường Nhật Tân",
+      "cityID": 26,
+      "districtID": 276,
+      "isDelete": false
+    },
+    {
+      "id": 3640,
+      "name": "Phường Phú Thượng",
+      "cityID": 26,
+      "districtID": 276,
+      "isDelete": false
+    },
+    {
+      "id": 3643,
+      "name": "Phường Quảng An",
+      "cityID": 26,
+      "districtID": 276,
+      "isDelete": false
+    },
+    {
+      "id": 3647,
+      "name": "Phường Thụy Khuê",
+      "cityID": 26,
+      "districtID": 276,
+      "isDelete": false
+    },
+    {
+      "id": 3642,
+      "name": "Phường Tứ Liên",
+      "cityID": 26,
+      "districtID": 276,
+      "isDelete": false
+    },
+    {
+      "id": 3644,
+      "name": "Phường Xuân La",
+      "cityID": 26,
+      "districtID": 276,
+      "isDelete": false
+    },
+    {
+      "id": 3645,
+      "name": "Phường Yên Phụ",
+      "cityID": 26,
+      "districtID": 276,
+      "isDelete": false
+    },
+    {
+      "id": 3729,
+      "name": "Phường Hạ Đình",
+      "cityID": 26,
+      "districtID": 282,
+      "isDelete": false
+    },
+    {
+      "id": 3730,
+      "name": "Phường Khương Đình",
+      "cityID": 26,
+      "districtID": 282,
+      "isDelete": false
+    },
+    {
+      "id": 3726,
+      "name": "Phường Khương Mai",
+      "cityID": 26,
+      "districtID": 282,
+      "isDelete": false
+    },
+    {
+      "id": 3725,
+      "name": "Phường Khương Trung",
+      "cityID": 26,
+      "districtID": 282,
+      "isDelete": false
+    },
+    {
+      "id": 3733,
+      "name": "Phường Kim Giang",
+      "cityID": 26,
+      "districtID": 282,
+      "isDelete": false
+    },
+    {
+      "id": 3723,
+      "name": "Phường Nhân Chính",
+      "cityID": 26,
+      "districtID": 282,
+      "isDelete": false
+    },
+    {
+      "id": 3728,
+      "name": "Phường Phương Liệt",
+      "cityID": 26,
+      "districtID": 282,
+      "isDelete": false
+    },
+    {
+      "id": 3731,
+      "name": "Phường Thanh Xuân Bắc",
+      "cityID": 26,
+      "districtID": 282,
+      "isDelete": false
+    },
+    {
+      "id": 3732,
+      "name": "Phường Thanh Xuân Nam",
+      "cityID": 26,
+      "districtID": 282,
+      "isDelete": false
+    },
+    {
+      "id": 3727,
+      "name": "Phường Thanh Xuân Trung",
+      "cityID": 26,
+      "districtID": 282,
+      "isDelete": false
+    },
+    {
+      "id": 3724,
+      "name": "Phường Thượng Đình",
+      "cityID": 26,
+      "districtID": 282,
+      "isDelete": false
+    },
+    {
+      "id": 3880,
+      "name": "Phường Lê Lợi",
+      "cityID": 26,
+      "districtID": 302,
+      "isDelete": false
+    },
+    {
+      "id": 3882,
+      "name": "Phường Ngô Quyền",
+      "cityID": 26,
+      "districtID": 302,
+      "isDelete": false
+    },
+    {
+      "id": 3881,
+      "name": "Phường Phú Thịnh",
+      "cityID": 26,
+      "districtID": 302,
+      "isDelete": false
+    },
+    {
+      "id": 3883,
+      "name": "Phường Quang Trung",
+      "cityID": 26,
+      "districtID": 302,
+      "isDelete": false
+    },
+    {
+      "id": 3884,
+      "name": "Phường Sơn Lộc",
+      "cityID": 26,
+      "districtID": 302,
+      "isDelete": false
+    },
+    {
+      "id": 3889,
+      "name": "Phường Trung Hưng",
+      "cityID": 26,
+      "districtID": 302,
+      "isDelete": false
+    },
+    {
+      "id": 3891,
+      "name": "Phường Trung Sơn Trầm",
+      "cityID": 26,
+      "districtID": 302,
+      "isDelete": false
+    },
+    {
+      "id": 3887,
+      "name": "Phường Viên Sơn",
+      "cityID": 26,
+      "districtID": 302,
+      "isDelete": false
+    },
+    {
+      "id": 3885,
+      "name": "Phường Xuân Khanh",
+      "cityID": 26,
+      "districtID": 302,
+      "isDelete": false
+    },
+    {
+      "id": 3894,
+      "name": "Xã Cổ Đông",
+      "cityID": 26,
+      "districtID": 302,
+      "isDelete": false
+    },
+    {
+      "id": 3886,
+      "name": "Xã Đường Lâm",
+      "cityID": 26,
+      "districtID": 302,
+      "isDelete": false
+    },
+    {
+      "id": 3892,
+      "name": "Xã Kim Sơn",
+      "cityID": 26,
+      "districtID": 302,
+      "isDelete": false
+    },
+    {
+      "id": 3893,
+      "name": "Xã Sơn Đông",
+      "cityID": 26,
+      "districtID": 302,
+      "isDelete": false
+    },
+    {
+      "id": 3890,
+      "name": "Xã Thanh Mỹ",
+      "cityID": 26,
+      "districtID": 302,
+      "isDelete": false
+    },
+    {
+      "id": 3888,
+      "name": "Xã Xuân Sơn",
+      "cityID": 26,
+      "districtID": 302,
+      "isDelete": false
+    }
+  ]

@@ -1,0 +1,46 @@
+
+.post-sale-item {
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	display: -webkit-flex; 
+	display: flex;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+	margin-bottom: 23px;
+
+	&-photo {
+		width: 40%;
+
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			-o-object-fit: cover;
+			object-fit: cover;
+		}
+	}
+
+	&-detail {
+		width: 60%;
+		padding: 16px 20px 16px 36px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	&-title {
+		display: block;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 24px;
+		color: #333F48;
+		margin-bottom: 11px;
+
+		a {
+			color: #333F48;
+		}
+	}
+
+	&-date {
+		margin-bottom: 15px;
+	}
+}

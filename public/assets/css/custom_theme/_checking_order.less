@@ -1,0 +1,135 @@
+
+
+
+.checking-order {
+	margin: 0 -56px;
+	min-height: 650px;
+	padding-top: 108px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&-search {
+		border-radius: 2px;
+		background: rgba(255, 255, 255, 0.9);
+		padding: 51px 75px 75px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 21px;
+		max-width: 592px;
+		margin: 0 auto;
+
+		.heading {
+
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 39px;
+			display: block;
+		}
+
+		.form-group {
+			margin-bottom: 30px;
+			margin-top: 36px;
+		}
+
+		.form-control {
+			display: block;
+			width: 100%;
+			background: #F6F6F6;
+			height: 48px;
+			border-radius: 0;
+			border: none;
+			padding: 2px 19px;
+			font-weight: 500;
+			font-size: 14px;
+			.placeholder(#C8C7CC);
+		}
+
+		.btn {
+			display: block;
+			width: 100%;
+			color: #FFFFFF;
+			background-color: @color-font_theme;
+			border-radius: 0;
+			border: none;
+			padding: 20px;
+			text-align: center;
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 21px;
+		}
+	}
+}
+
+.checking-order-result {
+	max-width: 1139px;
+	margin: 32px auto 100px;	
+
+	.order-detail-top .account-page-title span {
+		color: @color-font_theme;
+		font-weight: bold;
+	}
+
+	.order-detail-top .account-page-title {
+		margin-bottom: 0;
+	}
+}
+
+
+.order-details-view {
+
+
+	.box-order-status {
+
+		.box-title {
+			flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
+			display: -webkit-flex; 
+			display: flex;
+			-webkit-align-items: flex-start ;
+			align-items: flex-start;
+			-webkit-justify-content: space-between;
+			justify-content: space-between; 
+
+			a {
+				color: #63B1BC;
+				font-weight: 500;
+				font-size: 12px;
+			}
+		}
+
+		.status {
+			border-left: 1px solid #C8C7CC;
+			padding: 9px 0;
+			padding-left: 14px;
+			position: relative;
+			display: -webkit-flex; 
+			display: flex;
+			-webkit-align-items: center;
+			align-items: center;
+			font-size: 12px;
+			line-height: 17px;
+			margin-left: 14px;
+
+			&:before {
+				content: '';
+				background-color: #74AA50;
+				border-radius: 100%;
+				border: 2px solid #fff;
+				width: 14px;
+				height: 14px;
+				box-shadow: #C8C7CC 0px 0px 0px 1px; 
+				position: absolute;
+				left: -7px;
+				top: 50%;
+				margin-top: -7px;
+			}
+		}
+
+		.icon {
+			width: 24px;
+			min-width: 24px;
+			margin-right: 30px;
+		}
+	}
+}

@@ -1,0 +1,383 @@
+
+.swatch-attribute-options {
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	display: -webkit-flex; 
+	display: flex;
+	-webkit-align-items: flex-start ;
+	align-items: flex-start;
+}
+
+.swatch-option {
+	box-sizing: border-box;
+	border-radius: 1px;
+	text-align: center;
+	min-width: 30px;
+	height: 30px;
+	line-height: 30px;
+	color: #333F48;
+	font-weight: 500;
+	font-size: 14px;
+	margin-right: 8px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	border-radius: 100%;
+	cursor: pointer;
+	position: relative;
+
+	&.selected {
+		border: 3px solid #fff;
+		box-shadow: #333F48 0px 0px 0px 1px; 
+	}
+
+	&.disabled {
+		border: 1px dashed #C8C7CC;
+
+		&:before {
+			content: "";
+			width: 100%;
+			height: 100%;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			
+			z-index: 2;
+			border-radius: 100%;
+			background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAyMiAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGxpbmUgeDE9IjAuMzUzNTUzIiB5MT0iMC42NDY0NDciIHgyPSIyMS4zNTM2IiB5Mj0iMjEuNjQ2NCIgc3Ryb2tlPSIjQzhDN0NDIiBzdHJva2UtZGFzaGFycmF5PSIxIDEiLz4KPC9zdmc+Cg==");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+
+	&.text  {
+		margin-bottom: 14px;
+		min-width: 44px;
+		height: 44px;
+		line-height: 42px;
+		border-radius: 0;
+		border: 1px solid #333F48;
+		box-shadow: none;
+
+		&.selected  {
+			font-weight: bold;
+			background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxNiAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAuMjg1MTU2IDE0LjQ0NjNMMTUuMTYwMiAwLjQ0NjI4OVYxNC40NDYzSDAuMjg1MTU2WiIgZmlsbD0iIzMzM0Y0OCIvPgo8ZyBjbGlwLXBhdGg9InVybCgjY2xpcDApIj4KPHBhdGggZD0iTTguOTgyMDcgMTEuMzgwMUw3LjEyNjAxIDkuNTUxNjlMNi41MDczMiAxMC4xNjExTDguOTgyMDcgMTIuNTk5TDE0LjI4NTEgNy4zNzUwOEwxMy42NjY0IDYuNzY1NjJMOC45ODIwNyAxMS4zODAxWiIgZmlsbD0id2hpdGUiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMCI+CjxyZWN0IHdpZHRoPSI4Ljc1IiBoZWlnaHQ9IjguNzUiIGZpbGw9IndoaXRlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1LjUzNTE2IDQuODIxMjkpIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==");
+			background-repeat: no-repeat;
+			background-position: right -1px bottom -1px;
+			background-size: 14px 14px;
+		}
+
+		&.disabled {
+			color: #C8C7CC;
+			border: 1px dashed #BDBDBD;
+
+			&:before {
+				content: none !important;
+			}
+		}
+	}
+}
+
+.product-item {
+	padding: 0 8px;
+	list-style: none;
+
+	&-info {
+
+	}
+
+	&-photo {
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.product-image-photo {
+		display: block;
+		width: 100%;
+		
+	}
+
+	.swatch-opt {
+
+	}
+
+	.swatch-attribute-options {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		display: -webkit-flex; 
+		display: flex;
+
+		.swatch-option  {
+			width: 20px;
+			height: 20px;
+			min-width: 20px;
+			display: inline-block;
+			border-radius: 100%;
+			margin-right: 12px;
+			margin-bottom: 14px;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+
+		.swatch-more {
+			color: #C8C7CC;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 20px;
+			text-decoration: none;
+			cursor: pointer;	
+		}
+	}
+
+	&-name {
+		display: block;
+		color: #333F48;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 1.5;
+		margin: 0 0   4px;
+		line-clamp: 1;
+	    -webkit-line-clamp: 1;
+	    -webkit-box-orient: vertical;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    display: -webkit-box;
+
+		a {
+			color: #333F48;
+		}
+
+		&:hover a {
+			color: @color-font_theme;
+		}
+	}
+
+	.price-box {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		display: -webkit-flex; 
+		display: flex;
+		
+		min-height: 47px;
+
+		.price {
+			color: #333F48;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 1.5;
+		}
+
+		.old-price {
+			width: 100%;
+			display: block;
+
+			.price {
+				color: #C8C7CC;
+				text-decoration: line-through;
+				margin-bottom: 4px;
+			}
+
+		}
+
+		.price-percent {
+			display: inline-block;
+			background-color: #DA291C;
+			border-radius: 2px;
+			color: #fff;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 1.5;
+			padding: 0 8px;
+			margin-bottom: 4px;
+		}
+
+		.normal-price {
+			margin-right: 8px;
+		}
+	}
+
+	.progress-buy {
+		margin-top: 18px;
+
+		.progress {
+			margin-bottom: 8px;
+			background-color: #F6F6F6;
+			border-radius: 3px;
+			background-image: none;
+			display: block;
+			width: 100%;
+			height: 8px;
+			position: relative;
+
+			&-bar {
+				background: #63B1BC;
+				border-radius: 3px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 100%;
+			}
+		}
+
+		&-text {
+			font-weight: 500;
+			font-size: 14px;
+
+			.value {
+				color: #63B1BC;
+			}
+		}
+	}
+
+	&-label {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 5;
+	}
+
+	&-label-text {
+		color: #63B1BC;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 21px;
+		margin-top: 14px;
+	}
+
+	&-top {
+		display: -webkit-flex; 
+		display: flex;
+		-webkit-align-items: center;
+		align-items: center;
+	}
+
+	&-wishlist {
+		width: 32px;
+		height: 32px;
+		display: block;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyOCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjcwNzEgMjIuNDg1M0wyNC44MzYxIDEyLjM1NjNDMjcuMzI0OSA5Ljg2NzQ3IDI3LjY5MjEgNS43NzMwMiAyNS4zMzY5IDMuMTU3NDhDMjQuNzQ2OSAyLjUwMDQ0IDI0LjAyOTMgMS45NzA0OCAyMy4yMjc3IDEuNTk5OTVDMjIuNDI2MiAxLjIyOTQyIDIxLjU1NzYgMS4wMjYwOSAyMC42NzQ5IDEuMDAyMzVDMTkuNzkyMiAwLjk3ODYxMiAxOC45MTM5IDEuMTM0OTcgMTguMDkzNiAxLjQ2MTg5QzE3LjI3MzMgMS43ODg4MSAxNi41MjgyIDIuMjc5NDMgMTUuOTAzOCAyLjkwMzgxTDE0IDQuODA3NjFMMTIuMzU2MyAzLjE2Mzg3QzkuODY3NDYgMC42NzUwNjggNS43NzMwMSAwLjMwNzg4NCAzLjE1NzQ3IDIuNjYzMTNDMi41MDA0MyAzLjI1MzA5IDEuOTcwNDggMy45NzA3MiAxLjU5OTk1IDQuNzcyMjVDMS4yMjk0MiA1LjU3Mzc5IDEuMDI2MDggNi40NDI0MSAxLjAwMjM0IDcuMzI1MTJDMC45Nzg2MDQgOC4yMDc4NCAxLjEzNDk2IDkuMDg2MTMgMS40NjE4OCA5LjkwNjQyQzEuNzg4OCAxMC43MjY3IDIuMjc5NDIgMTEuNDcxOCAyLjkwMzgxIDEyLjA5NjJMMTMuMjkyOSAyMi40ODUzQzEzLjQ4MDQgMjIuNjcyOCAxMy43MzQ4IDIyLjc3ODIgMTQgMjIuNzc4MkMxNC4yNjUyIDIyLjc3ODIgMTQuNTE5NiAyMi42NzI4IDE0LjcwNzEgMjIuNDg1M1YyMi40ODUzWiIgc3Ryb2tlPSIjQzhDN0NDIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=");
+		margin-left: auto;
+		margin-bottom: 8px;
+		margin-top: -6px;
+		margin-right: 10px;
+		background-size: 28px 24px;
+
+		span {
+			display: none;
+		}
+
+		&.active {
+		    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMjYiIHZpZXdCb3g9IjAgMCAzMCAyNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1Ljc5NTUgMjQuNzk2TDI3LjE5MDcgMTMuNDAwOEMyOS45OTA2IDEwLjYwMDkgMzAuNDAzNiA1Ljk5NDY0IDI3Ljc1NCAzLjA1MjE3QzI3LjA5MDMgMi4zMTI5OSAyNi4yODI5IDEuNzE2OCAyNS4zODEyIDEuMjk5OTVDMjQuNDc5NSAwLjg4MzEwMiAyMy41MDIzIDAuNjU0MzQ3IDIyLjUwOTIgMC42Mjc2NDNDMjEuNTE2MiAwLjYwMDkzOCAyMC41MjgxIDAuNzc2ODQ0IDE5LjYwNTMgMS4xNDQ2M0MxOC42ODI1IDEuNTEyNDEgMTcuODQ0MyAyLjA2NDM2IDE3LjE0MTggMi43NjY3OUwxNSA0LjkwODU2TDEzLjE1MDggMy4wNTkzNkMxMC4zNTA5IDAuMjU5NDUxIDUuNzQ0NjUgLTAuMTUzNjMgMi44MDIxNyAyLjQ5NjAzQzIuMDYyOTkgMy4xNTk3MiAxLjQ2NjggMy45NjcwNiAxLjA0OTk1IDQuODY4NzhDMC42MzMxMDIgNS43NzA1MSAwLjQwNDM0NyA2Ljc0NzcxIDAuMzc3NjQzIDcuNzQwNzZDMC4zNTA5MzggOC43MzM4MiAwLjUyNjg0MyA5LjcyMTkgMC44OTQ2MjYgMTAuNjQ0N0MxLjI2MjQxIDExLjU2NzUgMS44MTQzNiAxMi40MDU4IDIuNTE2NzkgMTMuMTA4MkwxNC4yMDQ1IDI0Ljc5NTlDMTQuNDE1NSAyNS4wMDY5IDE0LjcwMTYgMjUuMTI1NSAxNSAyNS4xMjU1QzE1LjI5ODQgMjUuMTI1NSAxNS41ODQ1IDI1LjAwNjkgMTUuNzk1NSAyNC43OTZaIiBmaWxsPSIjREEyOTFDIi8+Cjwvc3ZnPgo=);
+		}
+	}
+
+	&-details {
+		height: 197px;
+	}
+
+	&-actions {
+		background-color: rgba(51, 63, 72, 0.8);
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 10;
+		display: -webkit-flex; 
+		display: flex;
+		opacity: 0;
+		.translate(0,50px);
+		.transition(0.3s);
+	}
+
+	&-action {
+		width: 50%;
+		height: 60px;
+		display: -webkit-flex; 
+		display: flex;
+		-webkit-align-items: center;
+		align-items: center; 
+		-webkit-justify-content: center;
+		justify-content: center; 
+		background-color: transparent;
+		border: none;
+		border-radius: 0;
+		text-align: center;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 21px;
+		color: #fff;
+		cursor: pointer;
+		
+
+		&:before {
+			content: "";
+			width: 24px;
+			height: 24px;
+			margin-right: 7px;
+			display: inline-block;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	}
+
+	.action-tocart {
+		border-right: 1px solid #C8C7CC;
+	}
+
+	.action-tocart:before {
+		background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwLjI1MDcgNi43NUgzLjc1MDc0QzMuMzM2NTMgNi43NSAzLjAwMDc0IDcuMDg1NzkgMy4wMDA3NCA3LjVMMy43NTA3NCAxOS41QzMuNzUwNzQgMTkuOTE0MiA0LjA4NjUzIDIwLjI1IDQuNTAwNzQgMjAuMjVIMTkuNTAwN0MxOS45MTUgMjAuMjUgMjAuMjUwNyAxOS45MTQyIDIwLjI1MDcgMTkuNUwyMS4wMDA3IDcuNUMyMS4wMDA3IDcuMDg1NzkgMjAuNjY1IDYuNzUgMjAuMjUwNyA2Ljc1WiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMTUuNzUgOS43NVY1LjI1QzE1Ljc1IDQuODUyMTggMTUuNTkyIDQuNDcwNjQgMTUuMzEwNyA0LjE4OTM0QzE1LjAyOTQgMy45MDgwNCAxNC42NDc4IDMuNzUgMTQuMjUgMy43NUg5Ljc1MDAxQzkuMzUyMTggMy43NSA4Ljk3MDY1IDMuOTA4MDQgOC42ODkzNSA0LjE4OTM0QzguNDA4MDQgNC40NzA2NCA4LjI1MDAxIDQuODUyMTggOC4yNTAwMSA1LjI1VjkuNzUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==");
+	}
+
+	.action-wishlist:before {
+		background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAyMiAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTExLjUzMDMgMTYuODY0TDE5LjEyNzEgOS4yNjcyQzIwLjk5MzcgNy40MDA2IDIxLjI2OTEgNC4zMjk3NiAxOS41MDI3IDIuMzY4MTFDMTkuMDYwMiAxLjg3NTMzIDE4LjUyMiAxLjQ3Nzg2IDE3LjkyMDggMS4xOTk5N0MxNy4zMTk3IDAuOTIyMDY4IDE2LjY2ODIgMC43Njk1NjUgMTYuMDA2MiAwLjc1MTc2MkMxNS4zNDQxIDAuNzMzOTU5IDE0LjY4NTQgMC44NTEyMjkgMTQuMDcwMiAxLjA5NjQyQzEzLjQ1NSAxLjM0MTYxIDEyLjg5NjIgMS43MDk1NyAxMi40Mjc5IDIuMTc3ODZMMTEgMy42MDU3MUw5Ljc2NzIgMi4zNzI5QzcuOTAwNiAwLjUwNjMwMSA0LjgyOTc2IDAuMjMwOTEzIDIuODY4MTEgMS45OTczNUMyLjM3NTMzIDIuNDM5ODEgMS45Nzc4NiAyLjk3ODA0IDEuNjk5OTcgMy41NzkxOUMxLjQyMjA3IDQuMTgwMzQgMS4yNjk1NiA0LjgzMTgxIDEuMjUxNzYgNS40OTM4NEMxLjIzMzk2IDYuMTU1ODggMS4zNTEyMyA2LjgxNDYgMS41OTY0MiA3LjQyOTgxQzEuODQxNjEgOC4wNDUwMyAyLjIwOTU3IDguNjAzODQgMi42Nzc4NiA5LjA3MjE1TDEwLjQ2OTcgMTYuODY0QzEwLjYxMDMgMTcuMDA0NiAxMC44MDExIDE3LjA4MzYgMTEgMTcuMDgzNkMxMS4xOTg5IDE3LjA4MzYgMTEuMzg5NyAxNy4wMDQ2IDExLjUzMDMgMTYuODY0VjE2Ljg2NFoiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==");
+	}
+
+	&:hover {
+
+		.product-item-actions {
+			opacity: 1;
+			.translate(0,0);
+			.transition(0.3s);
+		}
+	}
+}
+
+.product-items {
+	margin: 0 -8px;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	display: -webkit-flex; 
+	display: flex;
+	list-style: none;
+	padding: 0;
+
+	&.slick-slider {
+		display: block;
+	}
+
+	.product-item  {
+		width: 100%/4;
+	}
+}
+
+@media(max-width: 991px) {
+
+	.product-items .product-item {
+		width: 100%/3;
+	}
+}
+
+@media(max-width: 639px) {
+
+	.product-items .product-item {
+		width: 100%/2;
+	}
+}

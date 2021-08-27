@@ -1,0 +1,151 @@
+
+.header-submenu {
+	background-color: #63B1BC;
+    padding: 0 56px;
+    position: relative;
+
+	.ui-menu {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		display: -webkit-flex; 
+		display: flex;
+		padding-left: 185px;
+		margin-left: -25px;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		margin: 0;
+	}
+
+
+	.level0 {
+
+		> a {
+			display: block;
+			color: #fff;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 21px;
+			padding: 9px 25px 10px;
+			position: relative;
+		}
+
+		&:hover {
+
+			> a {
+
+				&:after {
+					content: "";
+					background: #FFFFFF;
+					border-radius: 6px;
+					width: 24px;
+					height: 3px;
+					position: absolute;
+					left: 50%;
+					margin-left: -12px;
+					bottom: 6px;
+					display: block;
+				}
+
+				&:before {
+					content: "";
+					width: 100%;
+					height: 5px;
+					display: block;
+					left: 0;
+					bottom: -2px;
+					position: absolute;
+					z-index: 10;
+				}
+			}
+		}
+	}
+
+	.submenu {
+		background-color: rgba(255,255,255,0.95);
+		box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		z-index: 200;
+		padding: 19px 56px;
+		display: none;
+
+		a {
+			display: inline-block;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 24px;
+			color: #333F48;
+
+			&:hover {
+				color: @color-font_theme;
+			}
+		}
+
+		img {
+			display: block;
+			width: 100%;
+		}
+
+		.subtitle {
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 21px;
+			color: #333F48;
+			margin-bottom: 8px;
+			text-transform: uppercase;
+
+			a {
+				font-weight: bold;
+				font-size: 14px;
+				line-height: 21px;
+			}
+		}
+	}
+
+	.submenu-content {
+		padding-left: 185px;
+	}
+
+	.row {
+		flex-wrap: nowrap;
+		-webkit-flex-wrap: nowrap;
+	}
+
+	.col-sm-3 {
+		width: 300%/22;
+	}
+
+	.col-sm-4 {
+		width: 400%/22;
+	}
+
+	.col-sm-5 {
+		width: 500%/22;
+	}
+
+	.col-sm-10 {
+		width: 1000%/22;
+	}
+
+	.level0 {
+
+		&:hover {
+
+			> .submenu {
+				display: block;
+			}
+
+		}
+	}
+}

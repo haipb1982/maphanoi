@@ -1,0 +1,279 @@
+
+.faq-search {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 68px;
+
+	&-container {
+		background-color: rgba(67, 75, 84, 0.62);
+		padding: 80px 20px;
+	}
+
+	h1 {
+		margin: 0 0 32px;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 29px;
+		text-transform: uppercase;
+	}
+
+	.faq-search-group {
+		position: relative;
+		max-width: 709px;
+		margin: 0 auto;
+	}
+
+	.search-btn {
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		border: none;
+		background-color: transparent;
+		outline: none;
+		box-shadow: none;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMSAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTkuNTE1NDQgMTYuNDA2MkMxMy4zMjEgMTYuNDA2MiAxNi40MDYxIDEzLjMyMTIgMTYuNDA2MSA5LjUxNTYyQzE2LjQwNjEgNS43MTAwNCAxMy4zMjEgMi42MjUgOS41MTU0NCAyLjYyNUM1LjcwOTg1IDIuNjI1IDIuNjI0ODIgNS43MTAwNCAyLjYyNDgyIDkuNTE1NjJDMi42MjQ4MiAxMy4zMjEyIDUuNzA5ODUgMTYuNDA2MiA5LjUxNTQ0IDE2LjQwNjJaIiBzdHJva2U9IiMzMzNGNDgiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTE0LjM4NjcgMTQuMzg2N0wxOC4zNzM1IDE4LjM3MzUiIHN0cm9rZT0iIzMzM0Y0OCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K");
+		
+		span {
+			display: none;
+		}
+	}
+
+	.search-input {
+		display: block;
+		height: 60px;
+		background-color: #F2F2F2;
+		border-radius: 40px;
+		width: 100%;
+		padding-left: 60px;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 21px;
+		color: #333F48;
+		border: none;
+		outline: none;
+		box-shadow: none;
+		.placeholder(#333F48);
+	}
+}
+
+.faq-cat {
+	margin-bottom: 92px;
+	max-width: 1505px;
+	margin-left: auto;
+	margin-right: auto;
+
+	&-content {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		display: -webkit-flex; 
+		display: flex;
+		margin: 0 -8px;
+	}
+
+	&-heading {
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 34px;
+	}
+
+	&-item {
+		width: 100%/5;
+		padding: 8px;
+		display: -webkit-flex; 
+		display: flex;
+		text-align: center;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 21px;
+		
+
+		&-info {
+			border: 1px solid #C8C7CC;
+			box-sizing: border-box;
+			border-radius: 2px;
+			width: 100%;
+			padding: 40px 10px 10px;
+			min-height: 160px;
+			position: relative;
+		}
+
+		&-icon {
+			height: 64px;
+
+			svg {
+				height: 64px;
+			}
+		}
+
+		&-text {
+			color: #333F48;
+
+			&:before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 3;
+			}
+		}
+
+		&:hover {
+			color: #63B1BC;
+
+			svg path {
+				stroke:  #63B1BC !important;
+				.transition(0.2s);
+			}
+
+			path[fill="#333F48"] {
+				fill: #63B1BC !important;
+			}
+
+			.faq-cat-item-info {
+				border: 1px solid #63B1BC;
+			}
+
+			.faq-cat-item-text {
+				color: #63B1BC;
+			}
+		}
+	}
+}
+
+.faq-list {
+	margin-bottom: 100px;
+
+	&-heading,
+	&-filter-container ,
+	&-content {
+		max-width: 1505px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&-heading {
+		margin-bottom: 37px;
+		display: -webkit-flex; 
+		display: flex;
+		-webkit-align-items: flex-start ;
+		align-items: flex-start; 
+
+		.title {
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 32px;
+			margin: 0;
+		}
+
+
+		.back {
+			width: 32px;
+			height: 32px;
+			display: inline-block;
+			background-repeat:no-repeat;
+			background-position: center;
+			background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI3IDE2SDUiIHN0cm9rZT0iIzMzM0Y0OCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMTQgN0w1IDE2TDE0IDI1IiBzdHJva2U9IiMzMzNGNDgiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==");
+			margin-right: 16px;
+			min-width: 32px;
+		}
+	}
+
+	&-filter {
+		background-color: #F6F6F6;
+		padding: 18px 56px;
+		margin: 0 -56px 5px;
+
+
+		a {
+			display: inline-block;
+			color: #333F48;
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 24px;
+			padding: 10px 10px 10px 0;
+			position: relative;
+
+			&:hover {
+				color: #63B1BC;
+			}
+
+			&.active {
+				color: #333F48;
+
+				&:after {
+					content: "";
+					background-color: #DA291C;
+					border-radius: 5px;
+					width: 24px;
+					height: 4px;
+					display: inline-block;
+					position: absolute;
+					bottom: 2px;
+					left: 50%;
+					margin-left: -12px;
+				}
+			}
+		}
+
+		&-container {
+
+			flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
+			display: -webkit-flex; 
+			display: flex;
+			-webkit-align-items: flex-start ;
+			align-items: flex-start; 
+			-webkit-justify-content: space-between;
+			justify-content: space-between;
+		}
+	}
+
+	&-content {
+	}
+}
+
+.faq-item {
+	border-bottom: 1px solid #C8C7CC;
+
+	&-title {
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 24px;
+		padding: 24px 0;
+		padding-right: 30px;
+		cursor: pointer;
+		background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAyMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIxIDFMMTEgMTFMMSAxIiBzdHJva2U9IiNDOEM3Q0MiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==");
+		background-repeat: no-repeat;
+		background-position: right center;
+	}
+
+	&-content {
+		display: none;
+		padding: 12px 0;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 1.33;
+	}
+
+	&.active {
+
+		.faq-item-content {
+			display: block;
+		}
+
+		.faq-item-title {
+			font-weight: bold;
+			background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAyMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgMTFMMTEgMC45OTk5OTlMMjEgMTEiIHN0cm9rZT0iIzMzM0Y0OCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K");
+		}
+	}
+}

@@ -1,0 +1,269 @@
+
+.table-order-items {
+	border: 1px solid #C8C7CC;
+	width: 100%;
+
+	.col {
+		width: 20%;
+		padding-right: 0;
+	}
+
+	thead {
+
+		tr {
+
+			th,
+			td {
+				background-color: #F6F6F6;
+				font-weight: bold;
+				font-size: 14px;
+				line-height: 21px;
+				padding: 11px 0 12px 16px;
+				color: #333F48;
+				vertical-align: top;
+				text-align: left;
+			}
+		}
+
+		.col.qty {
+			text-align: center;
+		}
+	}
+
+
+	tbody {
+
+		tr {
+			th,
+			td {
+				color: #333F48;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 21px;
+				padding: 10px 0 13px 16px;
+				vertical-align: middle;
+				text-align: left;
+				border-top: 1px solid #F6F6F6;
+			}
+		}
+
+		.col.id {
+			color: #63B1BC;
+			padding-left: 16px;
+		}
+
+		.col.qty {
+			text-align: center;
+		}
+	}
+
+	.col.total {
+		white-space: nowrap;
+	}
+
+	.order-product {
+		display: -webkit-flex; 
+		display: flex;
+
+		&-photo {
+			width: 60px;
+			min-width: 60px;
+			margin-right: 13px;
+		}
+
+		&-detail {
+
+		}
+
+		&-name {
+			display: block;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 21px;
+			margin-bottom: 5px;
+		}
+
+		&-option {
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 21px;
+			margin-bottom: 3px;
+
+			.swatch-option  {
+				width: 14px;
+				height: 14px;
+				display: inline-block;
+				vertical-align: middle;
+				border-radius: 100%;
+				margin: 0;
+				min-width: 14px;
+			}
+		}
+	}
+}
+
+.order-back-page {
+	width: 32px;
+	height: 32px;
+	display: block;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI3IDE2SDUiIHN0cm9rZT0iI0M4QzdDQyIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMTQgN0w1IDE2TDE0IDI1IiBzdHJva2U9IiNDOEM3Q0MiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==");
+	cursor: pointer;
+	margin-top: -38px;
+}
+
+.order-products-toolbar {
+
+	.pages {
+		margin-top: 44px;
+	}
+}
+
+.order-detail-top {
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	display: -webkit-flex; 
+	display: flex;
+	-webkit-align-items: center ;
+	align-items:center;
+	padding-bottom: 20px;
+
+	.order-status {
+		width: 100%;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	.order-date {
+		margin-left: auto;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 21px;
+
+		.label {
+			color: #C8C7CC;
+		}
+	}
+
+	.account-page-title {
+		margin-bottom: 14px;
+		margin-top: 20px;
+
+		span {
+			font-weight: 500;
+		}
+	}
+}
+
+.order-details-view {
+	padding-top: 20px;
+	border-top: 1px solid #C8C7CC;
+
+	.box {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 21px;
+		padding-bottom: 30px;
+	}
+
+	.box-order-shipping-address {
+		max-width: 320px;
+	}
+
+	.box-title {
+		display: block;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 21px;
+		margin: 0 0 10px;
+	}
+}
+
+.order-details-items {
+	margin-bottom: 22px;
+
+	.col  {
+		width: 13.42%;
+	}
+
+	.col.qty {
+		width: 20%;
+	}
+
+	.col.name {
+		width: 39.74%;
+		padding-left: 16px;
+	}
+}
+
+.order-details-totals {
+	display: -webkit-flex; 
+	display: flex;
+	-webkit-align-items: flex-start ;
+	align-items: flex-start;
+	-webkit-justify-content: flex-end ;
+	justify-content: flex-end ;
+	padding-right: 75px; 
+
+	table {
+		width: 100%;
+		max-width: 365px;
+
+		tr {
+
+			th,
+			td {
+				padding: 0;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 21px;
+				text-align: left;
+				vertical-align: top;
+			}
+
+			th {
+				padding-right: 15px;
+				color: #C8C7CC;
+			}
+
+			td {
+				text-align: right;
+				white-space: nowrap;
+			}
+
+			&:last-child {
+
+				th ,
+				td {
+					padding-bottom: 10px;
+				}
+			}
+		}
+
+		.quantity {
+
+			th,
+			td {
+				color: #333F48;
+			}
+		}
+
+		.grand-totals {
+
+			th,
+			td {
+				border-top: 1px solid #C8C7CC;
+				padding-top: 20px;
+				
+				color: #333F48;
+			}
+
+			th {
+				font-weight: bold;
+			}
+		}
+	}
+}
+

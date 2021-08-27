@@ -1,0 +1,145 @@
+
+body {
+	font-family: @font-family_base;
+	color: @color-font_base;
+	letter-spacing: 0;
+	box-sizing: border-box;
+	font-size: 14px;
+	margin: 0;
+	line-height: 1.5;
+
+	* {
+		letter-spacing: 0;
+		box-sizing: border-box;
+	}
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  padding: 6px 12px;
+  outline: none !important;
+}
+
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-appearance: textfield;
+  -webkit-appearance: none;
+}
+
+select {
+	background-position: right 11px center;
+	background-repeat: no-repeat;
+	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDExIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNS41IDZMMCAwTDExIDBMNS41IDZaIiBmaWxsPSIjMzMzMzMzIi8+Cjwvc3ZnPgo=");
+	background-size: 11px 6px;
+	padding-right: 25px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+
+  	&::-ms-expand {
+	    display: none;
+	}
+}
+
+button {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: #63B1BC;
+}
+
+img {
+	max-width: 100%;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+table {
+	border-spacing: 0;
+  	border-collapse: collapse;
+  	width: 100%;
+  	max-width: 100%;
+}
+
+.breadcrumbs {
+	color: #333F48;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	margin: 26px 0 23px;
+
+	a {
+		color: #C8C7CC;
+	}
+
+	strong {
+		font-weight: normal;
+	}
+
+	.items {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		display: -webkit-flex; 
+		display: flex;
+	}
+
+	.item {
+		margin: 0;
+		
+
+		+ .item {
+
+			&:before {
+
+			}
+		}
+
+		&:not(:last-child):after {
+			content: "|";
+			margin: 0 6px;
+			color: #C8C7CC;
+		}
+	}
+}
+
+.btn {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 22px;
+	color: #fff;
+	background-color: #333F48;
+	border-radius: 2px;
+	padding: 18px 12px;
+	text-align: center;
+	border: 1px solid #333F48;
+}
