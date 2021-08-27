@@ -12,6 +12,8 @@ export const ROUTE_MENU_LOGIN = {
 
 
 export const ROUTE_MAP = {
-  MAP: '/map.html',
+  DITICH: '/ditich.html',
+  DISAN: '/disanvanhoa.html',
+  THAMQUAN: '/thamquanao.html',
 }
 

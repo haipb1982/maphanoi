@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-sm-4">
         <div class="storelocator-search">
-          <div class="storelocator-search-heading">Tìm kiếm di tích lịch sử</div>
+          <div class="storelocator-search-heading">Tìm kiếm tham quan ảo</div>
           <div class="form-group">
             <label>Lựa chọn Tỉnh / Thành Phố</label>
             <select class="form-control" v-model="isquan">
@@ -114,9 +114,9 @@
 <script>
 import { mapGetters } from "vuex";
 import { gmapApi } from "vue2-google-maps";
-import * as quanJson from "../libs/quan_huyen.json";
-import * as phuongJson from "../libs/tinh_tp.json";
-import * as ditichJson from "../libs/ditich.json";
+import * as quanJson from "../../libs/quan_huyen.json";
+import * as phuongJson from "../../libs/tinh_tp.json";
+import * as ditichJson from "../../libs/thamquan.json";
 
 const quan = quanJson.default;
 const phuong = phuongJson.default;
