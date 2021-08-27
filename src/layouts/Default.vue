@@ -1,5 +1,6 @@
 <template>
     <div id="wrapper">
+      <Header />
       <main class="site-main">
          <slot />
       </main>
@@ -9,6 +10,7 @@
 <script>
 
 import { mapGetters } from "vuex";
+import Header from '../components/Client/Header.vue'
 export default {
   head() {
     return {
@@ -26,7 +28,7 @@ export default {
     };
   },
   components: {
-
+    Header
   },
   computed: {
     ...mapGetters(["getShowMenuBar"]),

@@ -3,10 +3,11 @@
     <div class="row">
       <div class="col-sm-4">
         <div class="storelocator-search">
-          <div class="storelocator-search-heading">Tìm kiếm cửa hàng</div>
+          <div class="storelocator-search-heading">Tìm kiếm di sản văn hóa</div>
           <div class="form-group">
             <label>Lựa chọn Tỉnh / Thành Phố</label>
             <select class="form-control" v-model="isquan">
+              <option value=""> Tất cả</option>
               <option v-for="(q, index) in quan" :key="index" :value="q.id">
                 {{ q.name }}
               </option>
@@ -15,6 +16,7 @@
           <div class="form-group">
             <label>Lựa chọn Quận / Huyện</label>
             <select class="form-control" v-model="isphuong">
+              <option value=""> Tất cả</option>
               <option
                 v-for="(p, index) in dataPhuong"
                 :key="index"
@@ -26,11 +28,12 @@
           </div>
           <div class="form-group">
             <label>Di tích xếp hạng</label>
-            <select class="form-control" v-model="isphuong">
+            <select class="form-control" v-model="is_ditich">
+              <option value=""> Tất cả</option>
               <option
-                v-for="(p, index) in dataPhuong"
+                v-for="(p, index) in ditichxephang"
                 :key="index"
-                :value="p.id"
+                :value="p.name"
               >
                 {{ p.name }}
               </option>
@@ -38,11 +41,12 @@
           </div>
           <div class="form-group">
             <label>Loại hình di sản thời kỳ</label>
-            <select class="form-control" v-model="isphuong">
+            <select class="form-control" v-model="is_disan">
+              <option value=""> Tất cả</option>
               <option
-                v-for="(p, index) in dataPhuong"
+                v-for="(p, index) in disan"
                 :key="index"
-                :value="p.id"
+                :value="p.name"
               >
                 {{ p.name }}
               </option>
@@ -50,9 +54,10 @@
           </div>
           <div class="form-group">
             <label>Lễ hội</label>
-            <select class="form-control" v-model="isphuong">
+            <select class="form-control" v-model="is_lehoi">
+              <option value=""> Tất cả</option>
               <option
-                v-for="(p, index) in dataPhuong"
+                v-for="(p, index) in lehoi"
                 :key="index"
                 :value="p.id"
               >
@@ -83,7 +88,7 @@
           <div class="storelocator-search-map"></div>
         </div>
       </div>
-      <div class="col-sm-8">
+      <div class="col-sm-8" style="margin-top: 105px;">
         <GmapMap :zoom="14" :center="center" style="width: 100%; height: 800px">
           <gmap-info-window
             :options="infoOptions"
@@ -109,9 +114,9 @@
 <script>
 import { mapGetters } from "vuex";
 import { gmapApi } from "vue2-google-maps";
-import * as quanJson from "../libs/quan_huyen.json";
-import * as phuongJson from "../libs/tinh_tp.json";
-import * as ditichJson from "../libs/ditich.json";
+import * as quanJson from "../../libs/quan_huyen.json";
+import * as phuongJson from "../../libs/tinh_tp.json";
+import * as ditichJson from "../../libs/disan.json";
 
 const quan = quanJson.default;
 const phuong = phuongJson.default;
@@ -163,7 +168,7 @@ export default {
         //optional: offset infowindow so it visually sits nicely on top of our marker
       },
       indexActive:null,
-      ditichxephang:[
+        ditichxephang:[
         {
           name:'Cấp quốc gia đặc biệt',
         },
@@ -236,10 +241,13 @@ export default {
       });
     },
     toggleInfoWindow(marker, idx) {
-      this.infoWindowPos = marker.position;
+      let image ="https://halotravel.vn/wp-content/uploads/2020/08/du-lich-hoang-thanh-thang-long.jpg"
+      this.infoWindowPos = this.positions(marker)
       this.infoOptions.content =
-        marker.di_tich +
-        `<img height="300px" width="400px"  src="${marker.image}"/>`;
+        `
+        <h3>${ marker.store_name}</h3>
+        <br />
+        <img height="300px" width="400px"  src="${image}"/>`;
 
       //check if its the same marker that was selected if yes toggle
       if (this.currentMidx == idx) {
@@ -279,8 +287,31 @@ export default {
     },
     indexActive () {
       this.markers = this.dataditich.filter((e) => e.simistorelocator_id == this.indexActive);
-
-    }
+    },
+    is_ditich() {
+         this.searchLocation(
+        this.phuong.filter((e) => e.districtID == this.isquan)[0].name
+      );
+      let name = this.quan.filter((e) => e.id == this.isquan)[0].name;
+      this.markers = this.dataditich.filter((e) => e.city == name && e.xep_hang == this.is_ditich);
+      this.markersLoad = this.dataditich.filter((e) => e.city == name && e.xep_hang == this.is_ditich);
+    },
+    is_disan() {
+         this.searchLocation(
+        this.phuong.filter((e) => e.districtID == this.isquan)[0].name
+      );
+      let name = this.quan.filter((e) => e.id == this.isquan)[0].name;
+        this.markers = this.dataditich.filter((e) => e.city == name && e.xep_hang == this.is_ditich && e.loai_hinh == this.is_disan);
+      this.markersLoad = this.dataditich.filter((e) => e.city == name && e.xep_hang == this.is_ditich && e.loai_hinh == this.is_disan);
+    },
+    is_lehoi() {
+         this.searchLocation(
+        this.phuong.filter((e) => e.districtID == this.isquan)[0].name
+      );
+      let name = this.quan.filter((e) => e.id == this.isquan)[0].name;
+         this.markers = this.dataditich.filter((e) => e.city == name && e.xep_hang == this.is_ditich && e.loai_hinh == this.is_disan && e.le_hoi == this.is_disan);
+      this.markersLoad = this.dataditich.filter((e) => e.city == name && e.xep_hang == this.is_ditich && e.loai_hinh == this.is_disan && e.le_hoi == this.is_disan);
+    },
   },
 };
 </script>
