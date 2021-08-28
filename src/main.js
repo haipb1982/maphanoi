@@ -16,11 +16,11 @@ Vue.config.productionTip = false
 import * as VueGoogleMaps from 'vue2-google-maps'
 
 
-
+// AIzaSyC4oMRFtzaGZpJMbM94uPXwZLDrcarPBGU
 Vue.use(VueGoogleMaps, {
   load: {
     key: 'AIzaSyC4oMRFtzaGZpJMbM94uPXwZLDrcarPBGU',
-    // libraries: 'places',
+    libraries: 'places',
   }
 });
 
