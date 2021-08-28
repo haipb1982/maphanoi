@@ -1,94 +1,107 @@
 <template>
   <div class="storelocator-top open">
-    <div class="row">
+    <div class="row m-0">
       <div class="col-sm-4">
-        <div class="storelocator-search">
-          <div class="storelocator-search-heading">Tìm kiếm di tích lịch sử</div>
-          <div class="form-group">
-            <label>Lựa chọn Tỉnh / Thành Phố</label>
-            <select class="form-control" v-model="isquan">
-              <option value=""> Tất cả</option>
-              <option v-for="(q, index) in quan" :key="index" :value="q.id">
-                {{ q.name }}
-              </option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Lựa chọn Quận / Huyện</label>
-            <select class="form-control" v-model="isphuong">
-              <option value=""> Tất cả</option>
-              <option
-                v-for="(p, index) in dataPhuong"
-                :key="index"
-                :value="p.id"
-              >
-                {{ p.name }}
-              </option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Di tích xếp hạng</label>
-            <select class="form-control" v-model="is_ditich">
-              <option value=""> Tất cả</option>
-              <option
-                v-for="(p, index) in ditichxephang"
-                :key="index"
-                :value="p.name"
-              >
-                {{ p.name }}
-              </option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Loại hình di sản thời kỳ</label>
-            <select class="form-control" v-model="is_disan">
-              <option value=""> Tất cả</option>
-              <option
-                v-for="(p, index) in disan"
-                :key="index"
-                :value="p.name"
-              >
-                {{ p.name }}
-              </option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Lễ hội</label>
-            <select class="form-control" v-model="is_lehoi">
-              <option value=""> Tất cả</option>
-              <option
-                v-for="(p, index) in lehoi"
-                :key="index"
-                :value="p.id"
-              >
-                {{ p.name }}
-              </option>
-            </select>
-          </div>
-          <button class="btn" @click="searchLocation(check)">TÌM KIẾM</button>
-
-          <div class="storelocator-search-result">
-            <div
-              class="storelocator-search-result-item"
-              v-for="(data, index) in markersLoad"
-              :key="index"
-              @click="indexActive = data.simistorelocator_id  "
-              :class="indexActive == data.simistorelocator_id ?'active':''"
-            >
-              <div class="title">{{ data.store_name }}</div>
-              <div class="address">
-                {{ data.address }}
-              </div>
-              <div class="phone">{{ data.address }}</div>
-              <div class="time">
-                Giờ mở cửa: {{ data.monday_open }} - {{ data.monday_close }}
-              </div>
-            </div>
-          </div>
-          <div class="storelocator-search-map"></div>
-        </div>
-      </div>
-      <div class="col-sm-8" style="margin-top: 105px;">
+				<div class="storelocator-search">
+					<div class="filter-block">
+						<div class="storelocator-search-heading">Tra cứu</div>
+						<div class="filter-box">
+							<div class="filter-address">
+								<div class="title-filter col-sm-12">Quận/Huyện</div>
+								<div class="form-group col-sm-6">
+									<select class="form-control" v-model="isquan">
+										<option value="">Tất cả</option>
+										<option
+											v-for="(q, index) in quan"
+											:key="index"
+											:value="q.id"
+										>
+											{{ q.name }}
+										</option>
+									</select>
+								</div>
+								<div class="form-group col-sm-6">
+									<select class="form-control" v-model="isphuong">
+										<option value="">Tất cả</option>
+										<option
+											v-for="(p, index) in dataPhuong"
+											:key="index"
+											:value="p.id"
+										>
+											{{ p.name }}
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="title-filter">Di tích xếp hạng</label>
+								<select class="form-control" v-model="is_ditich">
+									<option value=""> Tất cả</option>
+									<option
+										v-for="(p, index) in ditichxephang"
+										:key="index"
+										:value="p.name"
+									>
+										{{ p.name }}
+									</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label class="title-filter">Loại hình di sản thời kỳ</label>
+								<select class="form-control" v-model="is_disan">
+									<option value=""> Tất cả</option>
+									<option
+										v-for="(p, index) in disan"
+										:key="index"
+										:value="p.name"
+									>
+										{{ p.name }}
+									</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label class="title-filter">Lễ hội</label>
+								<select class="form-control" v-model="is_lehoi">
+									<option value=""> Tất cả</option>
+									<option
+										v-for="(p, index) in lehoi"
+										:key="index"
+										:value="p.id"
+									>
+										{{ p.name }}
+									</option>
+								</select>
+							</div>
+							<button class="btn" @click="searchLocation(check)">
+								TÌM KIẾM
+							</button>
+						</div>
+					</div>
+					<div class="storelocator-search-result">
+						<div class="storelocator-result-heading">Kết quả</div>
+						<div class="storelocator-search-result-box">
+							<div
+								class="storelocator-search-result-item"
+								v-for="(data, index) in markersLoad"
+								:key="index"
+								@click="indexActive = data.simistorelocator_id"
+								:class="indexActive == data.simistorelocator_id ? 'active' : ''"
+							>
+								<div class="title">{{ data.store_name }}</div>
+								<div class="address">
+									{{ data.address }}
+								</div>
+								<div class="phone">{{ data.address }}</div>
+								<div class="time">
+									Giờ mở cửa: {{ data.monday_open }} - {{ data.monday_close }}
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="storelocator-search-map"></div> -->
+				</div>
+			</div>
+      <div class="col-sm-8">
         <GmapMap :zoom="14" :center="center" style="width: 100%; height: 800px">
           <gmap-info-window
             :options="infoOptions"
