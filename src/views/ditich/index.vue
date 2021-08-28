@@ -128,7 +128,7 @@
 import { mapGetters } from "vuex";
 import { gmapApi } from "vue2-google-maps";
 import * as quanJson from "../../libs/quan_huyen.json";
-import * as phuongJson from "../../libs/tinh_tp.json";
+import * as phuongJson from "../../libs/phuong_xa.json";
 import * as ditichJson from "../../libs/ditich.json";
 
 const quan = quanJson.default;
