@@ -131,9 +131,11 @@ import * as quanJson from "../../libs/quan_huyen.json";
 import * as phuongJson from "../../libs/phuong_xa.json";
 import * as ditichJson from "../../libs/disan.json";
 
+import { createDummyData } from "@/utils/createDummyData"
+
 const quan = quanJson.default;
 const phuong = phuongJson.default;
-const ditich = ditichJson.default;
+const ditich = ditichJson.default.concat(createDummyData());
 
 export default {
 	name: "MAP_GOOGLE",
@@ -230,6 +232,8 @@ export default {
 		google: gmapApi,
 	},
 	mounted() {
+		// console.log("createDummyData()",createDummyData());
+		console.log("disanvanhoa", ditich)
 		this.geolocate();
 		this.markers = ditich;
 		this.markersLoad = ditich;

@@ -130,10 +130,11 @@ import { gmapApi } from "vue2-google-maps";
 import * as quanJson from "../../libs/quan_huyen.json";
 import * as phuongJson from "../../libs/phuong_xa.json";
 import * as ditichJson from "../../libs/ditich.json";
+import { createDummyData } from "@/utils/createDummyData"
 
 const quan = quanJson.default;
 const phuong = phuongJson.default;
-const ditich = ditichJson.default;
+const ditich = ditichJson.default.concat(createDummyData());
 
 export default {
 	name: "MAP_GOOGLE",
@@ -230,6 +231,7 @@ export default {
 		google: gmapApi,
 	},
 	mounted() {
+		console.log("ditich", ditich)
 		this.geolocate();
 		this.markers = ditich;
 		this.markersLoad = ditich;
