@@ -6,7 +6,7 @@
 					<div class="filter-block">
 						<div class="storelocator-search-heading">Tra cứu</div>
 						<div class="filter-box">
-							<div class="filter-address row">
+							<div class="filter-address">
 								<div class="title-filter col-sm-12">Quận/Huyện</div>
 								<div class="form-group col-sm-6">
 									<select class="form-control" v-model="isquan">
