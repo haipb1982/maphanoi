@@ -259,6 +259,7 @@ export default {
       });
     },
     searchLocation(check) {
+      try{
       var geocoder = new window.google.maps.Geocoder();
       geocoder.geocode({ address: check }, (results, status) => {
         if (status === "OK") {
@@ -266,6 +267,9 @@ export default {
           this.center.lng = results[0].geometry.location.lng();
         }
       });
+      }catch(err){
+        console.log(err)
+      }
     },
     toggleInfoWindow(marker, idx) {
       let image =
@@ -293,6 +297,7 @@ export default {
       };
     },
     searchMarke() {
+      try{
       let filter = {
         city: this.isquan,
       };
@@ -317,7 +322,7 @@ export default {
         delete filter.city;
       }
 
-      console.log(filter, this.dataditich);
+      console.log("di san van hoa search",filter, this.dataditich);
       let data = this.dataditich.filter(function (item) {
         for (var key in filter) {
           if (item[key] == null || item[key] == "" || item[key] != filter[key])
@@ -328,6 +333,10 @@ export default {
 
       this.markers = data;
       this.markersLoad = data;
+      }
+      catch(error){
+        console.log( error )
+      }
     },
   },
 

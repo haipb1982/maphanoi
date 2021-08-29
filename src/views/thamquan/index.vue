@@ -1,9 +1,9 @@
 <template>
   <div class="storelocator-top open">
     <div class="row m-0">
-      <div class="col-sm-4">
-        <div class="storelocator-search">
-          <div class="filter-block">
+      <div class="col-sm-4" style="top:38%;height: 600px;">
+        <div class="storelocator-search" >
+          <!-- <div class="filter-block" style="display:none">
             <div class="storelocator-search-heading">Tra cứu</div>
             <div class="filter-box">
               <div class="filter-address">
@@ -76,10 +76,10 @@
                 TÌM KIẾM
               </button>
             </div>
-          </div>
-          <div class="storelocator-search-result">
+          </div> -->
+          <div class="storelocator-search-result" style="height: 600px;">
             <div class="storelocator-result-heading">Kết quả</div>
-            <div class="storelocator-search-result-box">
+            <div class="storelocator-search-result-box" style="height: 600px;">
               <div
                 class="storelocator-search-result-item"
                 v-for="(data, index) in markersLoad"

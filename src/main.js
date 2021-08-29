@@ -15,11 +15,9 @@ Vue.component('no-sidebar-layout',NoSidebar)
 Vue.config.productionTip = false
 import * as VueGoogleMaps from 'vue2-google-maps'
 
-
-// AIzaSyC4oMRFtzaGZpJMbM94uPXwZLDrcarPBGU
 Vue.use(VueGoogleMaps, {
   load: {
-    key: 'AIzaSyC4oMRFtzaGZpJMbM94uPXwZLDrcarPBGU',
+    key: 'AIzaSyBVqHA6bwUaXNEfp-g2zyp9NoGSA4qq-5U',
     libraries: 'places',
   }
 });
