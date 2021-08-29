@@ -1,45 +1,100 @@
-const phuong = [1,4,6,7,8,10,13,16,19,22,25,28,31,34,37,40,43,46,49,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97,100,103,106,109,112,115,118,121,124,127,130,133,136,139,142,145,148,151,154,157,160,163,166,167,169,172,175,178,181,184,187,190,193,196,199,202,205,208,211,214,217,220,223,226,229,232,235,238,241,244,247,256,259,262,265,268,271,274,277,280,283,286,289,292,295,298,301,304,307,310,313,316,319,322,325,328,331,334,337,340,343,346,349,352,355,358,361,364,367,370,373,376,379,382,385,388,391,394,397,400,403,406,409,412,415,418,421,424,427,430,433,436,439,442,445,448,451,454,457,460,463,466,469,472,475,478,481,484,487,490,493,496,499,502,505,508,511,514,517,520,523,526,529,532,535,538,541,544,547,550,553,556,559,562,565,568,571,574,577,580,583,586,589,592,622,623,625,626,628,631,632,634,637,640,643,646,649,652,655,658,661,664,667,670,673,676,679,682,685,595,598,601,602,604,607,610,611,613,616,617,619,620,8973,8974,8977,898,8983,8986,8989,8992,8995,8998,9001,9004,9007,901,9013,9016,9019,9022,9538,9541,9542,9544,9547,955,9551,9552,9553,9556,9562,9565,9568,9571,9886,10117,10123,9574,9577,958,9583,9586,9589,9592,9595,9598,9601,9604,9607,961,9613,9616,9619,9625,9628,9631,9634,9637,964,9643,9646,9649,9652,9655,9658,9661,9664,9667,967,9673,9676,9679,9682,9685,9688,9691,9694,9697,97,9703,9706,9709,9712,9715,9718,9721,9724,9727,9733,9739,9742,9745,9748,9751,9754,9757,976,9763,9766,9769,9772,9775,9778,9781,9784,9787,979,9793,9796,9799,9802,9805,9808,9811,9814,9817,982,9823,9826,9829,9832,9835,9838,9841,9844,9847,985,9853,9856,9859,9862,9865,9868,9871,9874,9877,988,9883,9889,9892,4939,9895,9898,9901,9904,9907,991,9913,9916,9919,9922,9925,9928,9931,9934,9937,994,9943,9946,9949,9952,4927,493,4936,9955,9958,9961,9964,9967,997,9973,9976,9979,9982,9985,9988,9991,9994,9997,10,10003,10006,10009,10012,10015,10018,10021,10024,10027,1003,10033,10039,10042,10045,10048,10051,10054,10057,1006,10063,10066,10069,10072,10075,10078,10081,10084,10087,1009,10093,10096,10099,10102,10105,10108,10111,10114,1012,10126,10129,10132,10135,10138,10141,10144,10147,1015,10153,10156,10159,10162,10165,10168,10171,10174,10177,1018,10183,10186,10189,10192,10195,10198,10201,10204,10207,1021,10213,10216,10219,10222,10225,10228,10231,10234,10237,1024,10243,10246,10249,10252,10255,10258,10261,10264,10267,1027,10273,10276,10279,10282,10288,10291,10294,10297,103,10303,10306,10309,10312,10315,10318,10321,10324,10327,1033,10333,10336,10339,10342,10345,10348,10351,10354,10357,1036,10363,10366,10369,10372,10375,10378,10381,10384,10387,1039,10393,10396,10399,10402,10405,10408,10411,10414,10417,1042,10423,10426,10429,10432,10435,10438,10441,10444,10447,1045,10453,10456,10459,10462,10465,10468,10471,10474,10477,1048,10483,10486,10489,10492,10495,10498,10501,10504]
+import * as quanJson from "../libs/quan_huyen.json";
+import * as phuongJson from "../libs/phuong_xa.json";
 
-const xep_hang = ["Cấp quốc gia đặc biệt","Cấp quốc gia","Cấp thành phố","Chưa xếp hạng"];
-const loai_hinh = ["Di tích lịch sử văn hóa","Di tích kiến trúc nghệ thuật","Danh lam thắng cảnh","Di tích khảo cổ","Di tích lịch sử cách mạng"];
-const le_hoi =  ["Có lễ hội", "Không lễ hội"];
+const quan = quanJson.default;
+const phuong = phuongJson.default;
+
+const xep_hang = [
+  {
+    name: "Cấp quốc gia đặc biệt",
+    id: 1,
+  },
+  {
+    name: "Cấp quốc gia",
+    id: 2,
+  },
+  {
+    name: "Cấp thành phố",
+    id: 3,
+  },
+  {
+    name: "Chưa xếp hạng",
+    id: 4,
+  },
+];
+const loai_hinh = [
+  {
+    name: "Di tích lịch sử văn hóa",
+    id: 1,
+  },
+  {
+    name: "Di tích kiến trúc nghệ thuật",
+    id: 2,
+  },
+  {
+    name: "Danh lam thắng cảnh",
+    id: 3,
+  },
+  {
+    name: "Di tích khảo cổ",
+    id: 4,
+  },
+  {
+    name: "Di tích lịch sử cách mạng",
+    id: 5,
+  },
+];
+const le_hoi = [
+  {
+    name: "Có lễ hội",
+    id: 1,
+  },
+  {
+    name: "Không lễ hội",
+    id: 2,
+  },
+];
 
 const maxLat = 21.05;
 const minLat = 21;
 const maxLong = 105.85;
-const minLong = 105.80;
+const minLong = 105.8;
 
-  const DATA_NUMBERS = 1000;
-  export function createDummyData(){
-    let data =[];
-    let dummy = {};
+const DATA_NUMBERS = 200;
+export function createDummyData() {
+  let data = [];
+  let dummy = {};
 
-    for (var i = 0; i < DATA_NUMBERS; i++){
-        dummy = {};
-        dummy.simistorelocator_id = phuong[getRandomInt(0, 579)];
-        // dummy.simistorelocator_id = 1;
-        dummy.latitude = getRandom(minLat, maxLat);
-        dummy.longitude = getRandom(minLong, maxLong);
-        dummy.store_name = "test Google Map name " + i;
-        dummy.address = i + "  Hanoi street address";
-        dummy.baseimage_id = null;
-        dummy.city =  "Quận Cầu Giấy";
-        dummy.description = "dummy descriptions " + dummy.latitude + " " + dummy.longitude
-        dummy.xep_hang = xep_hang[getRandomInt(0, 3)];
-        dummy.loai_hinh = loai_hinh[getRandomInt(0, 4)];
-        dummy.le_hoi = le_hoi[getRandomInt(0, 1)];
-        
-        data.push(dummy)
-    }
-
-    return data;
-
+  for (var i = 0; i < DATA_NUMBERS; i++) {
+    let quanrandom = quan[getRandomInt(0, quan.length)];
+    let randomPhuong = phuong.filter((e) => e.districtID == quanrandom.id);
+    dummy = {};
+    dummy.simistorelocator_id =
+      randomPhuong[getRandomInt(0, randomPhuong.length)].id;
+    // dummy.simistorelocator_id = 1;
+    dummy.latitude = getRandom(minLat, maxLat);
+    dummy.longitude = getRandom(minLong, maxLong);
+    dummy.store_name = "test Google Map name " + i;
+    dummy.address = i + "  Hanoi street address";
+    dummy.baseimage_id = null;
+    dummy.city = quanrandom.id;
+    dummy.description =
+      "dummy descriptions " + dummy.latitude + " " + dummy.longitude;
+    dummy.xep_hang = xep_hang[getRandomInt(0, 3)].id;
+    dummy.loai_hinh = loai_hinh[getRandomInt(0, 4)].id;
+    dummy.le_hoi = le_hoi[getRandomInt(0, 1)].id;
+    dummy.phuong = le_hoi[getRandomInt(0, 1)].id;
+    dummy.id_detail = getRandomInt(0, 10000000000);
+    data.push(dummy);
   }
 
-  function getRandom(min, max){
-      return (Math.random() * (max-min)) + min
-  }
+  return data;
+}
 
-  function getRandomInt(minInt, maxInt){
-    return Math.floor(Math.random() * (maxInt-minInt)) + minInt
+function getRandom(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+function getRandomInt(minInt, maxInt) {
+  return Math.floor(Math.random() * (maxInt - minInt)) + minInt;
 }
