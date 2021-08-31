@@ -55,6 +55,14 @@ const le_hoi = [
   },
 ];
 
+const image =[
+  "https://vnztech.com/demo/wp-content/uploads/2021/08/31-5830.jpeg",
+  "https://vnztech.com/demo/wp-content/uploads/2018/05/hanoi_opera_house-500x281.webp",
+  "https://vnztech.com/demo/wp-content/uploads/2018/05/phong-canh-chua-tran-quoc.jpg",
+  "https://halotravel.vn/wp-content/uploads/2020/08/du-lich-hoang-thanh-thang-long.jpg",
+  "https://vnztech.com/demo/wp-content/uploads/2018/11/javo-directory-wp-theme03.jpg"
+]
+
 const maxLat = 21.06;
 const minLat = 20.9;
 const maxLong = 105.95;
@@ -77,6 +85,7 @@ export function createDummyData() {
     dummy.store_name = "test Google Map name " + i;
     dummy.address = i + "  Hanoi street address";
     dummy.baseimage_id = null;
+    dummy.image = image[getRandomInt(0, 4)]
     dummy.city = quanrandom.id;
     dummy.description =
       "dummy descriptions " + dummy.latitude + " " + dummy.longitude;

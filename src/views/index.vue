@@ -93,7 +93,7 @@
                 <div class="address">
                   {{ data.address }}
                 </div>
-                <div class="phone">{{ data.address }}</div>
+                <div class="image"><img :src="data.image" style="width:50px;height:50px" ></div>
                 <!-- <div class="time">
                   Giờ mở cửa: {{ data.monday_open }} - {{ data.monday_close }}
                 </div> -->
@@ -316,13 +316,15 @@ console.log("created",this.mapdata)
 
     },
     toggleInfoWindow(marker, idx) {
-      let image =
-        "https://halotravel.vn/wp-content/uploads/2020/08/du-lich-hoang-thanh-thang-long.jpg";
+      
       this.infoWindowPos = this.positions(marker);
       this.infoOptions.content = `
+        <img height="100px" width="100px" style="float:right" src="${marker.image}"/>
         <h3>${marker.store_name}</h3>
         <br />
-        <img height="300px" width="400px"  src="${image}"/>`;
+        ${marker.description}
+
+        `;
 
       //check if its the same marker that was selected if yes toggle
       if (this.currentMidx == idx) {
@@ -404,7 +406,14 @@ console.log("created",this.mapdata)
       this.markers = this.mapdata.filter(
         (e) => e.id_detail == this.indexActive
       );
-    },
+      
+      this.center = {
+          lat: this.mapdata[0].latitude,
+          lng: this.mapdata[0].longitude,
+        };
+console.log("center detail", this.center)
+
+     },
     is_ditich() {
       this.searchMarke();
     },
