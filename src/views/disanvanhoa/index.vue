@@ -92,9 +92,9 @@
                   {{ data.address }}
                 </div>
                 <div class="phone">{{ data.address }}</div>
-                <div class="time">
+                <!-- <div class="time">
                   Giờ mở cửa: {{ data.monday_open }} - {{ data.monday_close }}
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -102,7 +102,7 @@
         </div>
       </div>
       <div class="col-sm-8">
-        <GmapMap :zoom="12" :center="center" style="width: 100%; height: 800px">
+        <GmapMap :zoom="13" :center="center" style="width: 100%; height: 800px">
           <gmap-info-window
             :options="infoOptions"
             :position="infoWindowPos"
@@ -143,7 +143,7 @@ export default {
     return {
       quan: quan,
       phuong: phuong,
-      center: { lat: 10, lng: 10 },
+      center: { lat: 21.027866815220005, lng: 105.83394801948478  },
       isquan: null,
       isphuong: null,
       infoWinOpen: false,
@@ -243,6 +243,7 @@ export default {
     google: gmapApi,
   },
   mounted() {
+    console.log("center", this.center)
     this.geolocate();
     this.markers = ditich;
     this.markersLoad = ditich;

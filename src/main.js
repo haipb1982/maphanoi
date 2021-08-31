@@ -19,6 +19,8 @@ Vue.use(VueGoogleMaps, {
   load: {
     key: 'AIzaSyBVqHA6bwUaXNEfp-g2zyp9NoGSA4qq-5U',
     libraries: 'places',
+    region: 'VI',
+    language: 'vi',
   }
 });
 

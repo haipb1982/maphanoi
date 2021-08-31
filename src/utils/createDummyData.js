@@ -88,6 +88,7 @@ export function createDummyData() {
     data.push(dummy);
   }
 
+  console.log("createDummyData",data.length)
   return data;
 }
 
