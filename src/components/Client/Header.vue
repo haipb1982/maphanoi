@@ -2,7 +2,7 @@
 	<header class="site-header">
 		<div class="site-header-container">
 			<div class="header-menu">
-				<ul v-if="urlLink">
+				<!-- <ul v-if="urlLink">
 					<li class="">
 						<router-link tag="a" :to="urlLink.DISAN"
 							>Di sản văn hóa
@@ -15,6 +15,21 @@
 						<router-link tag="a" :to="urlLink.THAMQUAN"
 							>Tham quan ảo
 						</router-link>
+					</li>
+				</ul> -->
+				<ul v-if="urlLink">
+					<li class="">
+						<a :href="urlLink.DISAN">
+							Di sản văn hóa
+						</a>
+					</li>
+					<li class="">
+						<a :href="urlLink.DITICH">Di Tích </a>
+					</li>
+					<li class="">
+						<a :href="urlLink.THAMQUAN"
+							>Tham quan ảo
+						</a>
 					</li>
 				</ul>
 			</div>

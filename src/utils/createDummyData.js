@@ -55,10 +55,10 @@ const le_hoi = [
   },
 ];
 
-const maxLat = 21.05;
-const minLat = 21;
-const maxLong = 105.85;
-const minLong = 105.8;
+const maxLat = 21.06;
+const minLat = 20.9;
+const maxLong = 105.95;
+const minLong = 105.7;
 
 const DATA_NUMBERS = 200;
 export function createDummyData() {

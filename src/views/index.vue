@@ -1,15 +1,8 @@
 <template>
   <div class="storelocator-top open">
-    <div class="row m-0">
-      <div class="col-sm-4">
-        <div class="storelocator-search">
-          <div class="filter-block">
-            <div class="storelocator-search-heading">Tra cứu</div>
-            <div class="filter-box">
-              <div class="filter-address">
-                <div class="title-filter col-sm-12">Quận/Huyện</div>
-                <div class="form-group col-sm-6">
-                  <select class="form-control" v-model="isquan">
+
+    <div class="row m-0" v-if="isHaveFilter">
+        <select class="form-control" v-model="isquan">
                     <option :value="null">Tất cả</option>
                     <option
                       v-for="(p, index) in quan"
@@ -19,9 +12,9 @@
                       {{ p.name }}
                     </option>
                   </select>
-                </div>
-                <div class="form-group col-sm-6">
-                  <select class="form-control" v-model="isphuong">
+
+
+<select class="form-control" v-model="isphuong">
                     <option value="">Tất cả</option>
                     <option
                       v-for="(p, index) in dataPhuong"
@@ -31,11 +24,8 @@
                       {{ p.name }}
                     </option>
                   </select>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="title-filter">Di tích xếp hạng</label>
-                <select class="form-control" v-model="is_ditich">
+
+<select class="form-control" v-model="is_ditich">
                   <option value="">Tất cả</option>
                   <option
                     v-for="(p, index) in ditichxephang"
@@ -45,10 +35,8 @@
                     {{ p.name }}
                   </option>
                 </select>
-              </div>
-              <div class="form-group">
-                <label class="title-filter">Loại hình di sản thời kỳ</label>
-                <select class="form-control" v-model="is_disan">
+
+<select class="form-control" v-model="is_disan">
                   <option value="">Tất cả</option>
                   <option
                     v-for="(p, index) in disan"
@@ -58,10 +46,9 @@
                     {{ p.name }}
                   </option>
                 </select>
-              </div>
-              <div class="form-group">
-                <label class="title-filter">Lễ hội</label>
-                <select class="form-control" v-model="is_lehoi">
+
+
+<select class="form-control" v-model="is_lehoi">
                   <option value="">Tất cả</option>
                   <option
                     v-for="(p, index) in lehoi"
@@ -71,12 +58,27 @@
                     {{ p.name }}
                   </option>
                 </select>
-              </div>
-              <button class="btn" @click="searchLocation(check)">
+
+<button class="btn" @click="searchLocation(check)">
+                TRA CỨU
+              </button>
+    </div>
+
+    <!-- search by keyword -->
+    <div v-if="isHaveSearch">
+
+      <input type="text" v-model="keywords">
+        <button class="btn" @click="searchKeywords">
                 TÌM KIẾM
               </button>
-            </div>
-          </div>
+
+
+    </div>
+
+    <div class="row m-0">
+      <div class="col-sm-4">
+        <div class="storelocator-search">
+          
           <div class="storelocator-search-result">
             <div class="storelocator-result-heading">Kết quả</div>
             <div class="storelocator-search-result-box">
@@ -127,19 +129,25 @@
 <script>
 import { mapGetters } from "vuex";
 import { gmapApi } from "vue2-google-maps";
-import * as quanJson from "../libs/quan_huyen.json";
-import * as phuongJson from "../libs/phuong_xa.json";
-import * as ditichJson from "../libs/thamquan.json";
+import * as quanJson from "@/libs/quan_huyen.json";
+import * as phuongJson from "@/libs/phuong_xa.json";
+import * as disanvanhoaJson from "@/libs/disanvanhoa.json";
+import * as ditichJson from "@/libs/ditich.json";
+import * as thamquanaoJson from "@/libs/thamquanao.json";
 import { createDummyData } from "@/utils/createDummyData";
 
 const quan = quanJson.default;
 const phuong = phuongJson.default;
-const ditich = ditichJson.default.concat(createDummyData());
+// const mapdata = ditichJson.default.concat(createDummyData());
 
 export default {
   name: "MAP_GOOGLE",
   data() {
     return {
+      maptype: "disanvanhoa",
+      mapdata: [],
+      isHaveFilter: true,
+      isHaveSearch: true,
       quan: quan,
       phuong: phuong,
       center: { lat: 21.027866815220005, lng: 105.83394801948478  },
@@ -148,6 +156,7 @@ export default {
       infoWinOpen: false,
       dataPhuong: [],
       check: null,
+      keywords:null,
       dataOption: [
         {
           title: "test A",
@@ -162,7 +171,7 @@ export default {
           },
         },
       ],
-      dataditich: ditich,
+      // dataditich: this.mapdata,
       markers: null,
       markersLoad: null,
       icon: {
@@ -241,15 +250,36 @@ export default {
     ...mapGetters(["getInforUser"]),
     google: gmapApi,
   },
-  mounted() {
-    console.log("center", this.center)
+  mounted() {   
     this.geolocate();
-    this.markers = ditich;
-    this.markersLoad = ditich;
+    this.markers = this.mapdata;
+    this.markersLoad = this.mapdata;
     this.dataPhuong = this.phuong;
   },
   created() {
-    // this.$router.push('disanvanhoa') 
+    console.log("maptype", this.$route.params["maptype"] )
+    console.log("path", this.$route.path )
+    // console.log("center", this.center)
+
+    this.maptype = this.$route.params["maptype"];
+
+    switch(this.maptype) {
+        case "ditich":
+          this.mapdata = ditichJson.default
+          break;
+        case "thamquanao":
+          this.mapdata = thamquanaoJson.default;
+          this.isHaveFilter = false;
+          this.isHaveSearch = false;
+          break;
+        default:
+          this.mapdata = disanvanhoaJson.default
+      }
+
+this.mapdata  = this.mapdata.concat(createDummyData())
+
+console.log("created",this.mapdata)
+
   },
   methods: {
     geolocate() {
@@ -268,6 +298,22 @@ export default {
           this.center.lng = results[0].geometry.location.lng();
         }
       });
+    },
+    searchKeywords() {
+      console.log(this.keywords)
+
+      var kw = this.keywords.toUpperCase() ;
+
+      let data = this.mapdata.filter(function (item) {
+
+          return item["store_name"].toUpperCase().indexOf(kw) != -1
+            
+      });
+
+      console.log("searchKeywords",data)
+      this.markers = data;
+      this.markersLoad = data;
+
     },
     toggleInfoWindow(marker, idx) {
       let image =
@@ -295,6 +341,9 @@ export default {
       };
     },
     searchMarke() {
+
+      console.log("searchMarke",this.mapdata)
+
       let filter = {
         city: this.isquan,
       };
@@ -319,8 +368,8 @@ export default {
         delete filter.city;
       }
 
-      console.log(filter, this.dataditich);
-      let data = this.dataditich.filter(function (item) {
+      console.log(filter, this.mapdata);
+      let data = this.mapdata.filter(function (item) {
         for (var key in filter) {
           if (item[key] == null || item[key] == "" || item[key] != filter[key])
             return false;
@@ -352,7 +401,7 @@ export default {
       this.searchMarke();
     },
     indexActive() {
-      this.markers = this.dataditich.filter(
+      this.markers = this.mapdata.filter(
         (e) => e.id_detail == this.indexActive
       );
     },
