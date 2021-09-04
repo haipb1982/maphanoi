@@ -88,7 +88,7 @@
 									<div class="address">
 										{{ data.address }}
 									</div>
-                  <div class="description"></div>
+                  <!-- <div class="description"><a :href="data.link_web">chi tiết</a></div> -->
 								</div>
 
 								<!-- <div class="time">
@@ -297,7 +297,8 @@
         <h3>${marker.store_name}</h3>
         <br />
         ${marker.description}
-
+		<br />
+		<a href="${marker.link_web}">chi tiết</a>
         `;
 
 				//check if its the same marker that was selected if yes toggle

@@ -63,6 +63,12 @@ const image =[
   "https://vnztech.com/demo/wp-content/uploads/2018/11/javo-directory-wp-theme03.jpg"
 ]
 
+const link_web =[
+  "https://vnztech.com/demo/portfolio/chua-mot-cot/",
+  "https://vnztech.com/demo/portfolio/trong-dong-dong-xa/",
+  "https://vnztech.com/demo/top-10-di-tich-lich-su-o-ha-noi-ban-nhat-dinh-phai-kham-pha/",
+  "https://vnztech.com/demo/tai-nguyen-di-san-cua-ha-noi-tiem-nang-can-khoi-day/"
+]
 const maxLat = 21.06;
 const minLat = 20.9;
 const maxLong = 105.95;
@@ -85,7 +91,8 @@ export function createDummyData() {
     dummy.store_name = "test Google Map name " + i;
     dummy.address = i + "  Hanoi street address";
     dummy.baseimage_id = null;
-    dummy.image = image[getRandomInt(0, 4)]
+    dummy.image = image[getRandomInt(0, 4)];
+    dummy.link_web = link_web[getRandomInt(0, 4)]
     dummy.city = quanrandom.id;
     dummy.description =
       "dummy descriptions " + dummy.latitude + " " + dummy.longitude;
