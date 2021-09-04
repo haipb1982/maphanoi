@@ -18,16 +18,28 @@
 					</li>
 				</ul>
 				<!-- <ul v-if="urlLink">
+					<li style="color:white">{{ $route.params.maptype }}</li>
 					<li class="">
-						<a :href="urlLink.DISAN">
+						<router-link :to="{ name: 'Home', params: { maptype: 'disanvanhoa' }}">Di sản văn hóa</router-link>
+					</li>
+					<li class="">
+						<router-link :to="{ name: 'Home', params: { maptype: 'ditich' }}">Di tích</router-link>
+					</li>
+					<li class="">
+						<router-link :to="{ name: 'Home', params: { maptype: 'thamquanao' }}">Tham quan ảo</router-link>
+					</li>
+				</ul>
+				<ul v-if="urlLink">
+					<li class="">
+						<a :href="'/ban-do-so' +urlLink.DISAN">
 							Di sản văn hóa
 						</a>
 					</li>
 					<li class="">
-						<a :href="urlLink.DITICH">Di Tích </a>
+						<a :href="'/ban-do-so' +urlLink.DITICH">Di Tích </a>
 					</li>
 					<li class="">
-						<a :href="urlLink.THAMQUAN"
+						<a :href="'/ban-do-so' +urlLink.THAMQUAN"
 							>Tham quan ảo
 						</a>
 					</li>
@@ -39,23 +51,13 @@
 
 <script>
 	import { ROUTE_MAP } from "@/utils/constants";
-	import { mapGetters } from "vuex";
 	const router = ROUTE_MAP;
 	export default {
 		data() {
 			return {
 				urlLink: router,
 			};
-		},
-		mounted() {},
-		methods: {
-			showmenu() {
-				this.$store.dispatch("ShowMenuBar");
-			},
-		},
-		computed: {
-			...mapGetters(["getInforUser"]),
-		},
+		}
 	};
 </script>
 

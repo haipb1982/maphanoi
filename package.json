@@ -7,7 +7,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "dev": "vue-cli-service serve",
-    "deploy": "vue-cli-service ftpdeploy --genHist --diffFileOnly --ftpCfgPath /ftpdeploy/ --ftpHistPath /ftpdeploy/"   
+    "deploy": "vue-cli-service ftpdeploy --genHist --diffFileOnly --ftpCfgPath /ftpdeploy/ --ftpHistPath /ftpdeploy/"
   },
   "dependencies": {
     "axios": "^0.21.1",

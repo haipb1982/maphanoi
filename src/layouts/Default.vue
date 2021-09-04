@@ -37,7 +37,7 @@ export default {
 </script>
 
 <style>
-@import url('/assets/css/jquery.fancybox.css');
-@import url('/assets/css/custom-theme.css');
+@import '../assets/css/jquery.fancybox.css';
+@import '../assets/css/custom-theme.css';
 
 </style>

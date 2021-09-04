@@ -153,7 +153,7 @@
 				markers: null,
 				markersLoad: null,
 				icon: {
-					url: "/assets/google-maps.png",
+					url: "google-maps.png",
 				},
 				infoWindowPos: null,
 				infoContent: null,
@@ -229,6 +229,7 @@
 			google: gmapApi,
 		},
 		mounted() {
+			console.log("$route.params.maptype ", this.$route.params.maptype )
 			this.geolocate();
 			this.markers = this.mapdata;
 			this.markersLoad = this.mapdata;

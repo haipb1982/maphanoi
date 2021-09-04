@@ -10,10 +10,15 @@ export const ROUTE_MENU_LOGIN = {
   FORGETPASS:'/quen_mat_khau'
 }
 
-
 export const ROUTE_MAP = {
-  DITICH: '/ditich',
-  DISAN: '/disanvanhoa',
-  THAMQUAN: '/thamquanao',
+  DITICH: '/ditich.html',
+  DISAN: '/disanvanhoa.html',
+  THAMQUAN: '/thamquanao.html',
 }
+
+// export const ROUTE_MAP = {
+//   DITICH: '/ban-do-so/ditich',
+//   DISAN: '/ban-do-so/disanvanhoa',
+//   THAMQUAN: '/ban-do-so/thamquanao',
+// }
 
