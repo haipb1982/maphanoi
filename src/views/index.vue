@@ -59,7 +59,7 @@
 						:key="index"
 						v-for="(m, index) in markers"
 						:position="positions(m)"
-						:draggable="true"
+						:draggable="false"
 						:icon="icon.url"
 						:clickable="true"
 						@click="toggleInfoWindow(m, index)"
@@ -69,7 +69,7 @@
 			<div class="col-result">
 				<div class="storelocator-search">
 					<div class="storelocator-search-result">
-						<div class="storelocator-result-heading">Kết quả tìm kiếm</div>
+						<div class="storelocator-result-heading" style="background:#000;">Kết quả tìm kiếm</div>
 						<div class="storelocator-search-result-box">
 							<div
 								class="storelocator-search-result-item"
@@ -79,8 +79,9 @@
 								:class="indexActive == data.id_detail ? 'active' : ''"
 							>
 								<div class="item-left">
-									<div class="image">
-										<img :src="data.image" />
+									<div class="image">																				
+										<img v-if="data.image" :src="data.image" />
+										<img v-else src="https://vnztech.com/demo/wp-content/uploads/2021/08/31-5830.jpeg" />
 									</div>
 								</div>
 								<div class="item-right">
@@ -222,6 +223,7 @@
 				is_ditich: null,
 				is_disan: null,
 				is_lehoi: null,
+				imageDefault : 'https://vnztech.com/demo/wp-content/uploads/2021/08/31-5830.jpeg'
 			};
 		},
 		computed: {
@@ -236,22 +238,28 @@
 			this.dataPhuong = this.phuong;
 		},
 		created() {
-			console.log("maptype", this.$route.params["maptype"]);
-			console.log("path", this.$route.path);
+			// console.log("maptype", this.$route.params["maptype"]);
+			// console.log("path", this.$route.path);
 			// console.log("center", this.center)
 
-			this.maptype = this.$route.params["maptype"];
+			// this.maptype = this.$route.params["maptype"];
+			let path = this.$route.path;
 
-			switch (this.maptype) {
-				case "ditich":
+			console.log("path",path)
+
+			switch (path) {
+				case "/ditich.html":
 					this.mapdata = ditichJson.default;
+					// console.log("ditichJson",ditichJson.default)
 					break;
-				case "thamquanao":
+				case "/thamquanao.html":
 					this.mapdata = thamquanaoJson.default;
 					this.isHaveFilter = false;
 					this.isHaveSearch = false;
+					// console.log("thamquanaoJson",thamquanaoJson.default)
 					break;
 				default:
+					// console.log("disanvanhoaJson",disanvanhoaJson.default)
 					this.mapdata = disanvanhoaJson.default;
 			}
 
@@ -293,12 +301,13 @@
 			toggleInfoWindow(marker, idx) {
 				this.infoWindowPos = this.positions(marker);
 				this.infoOptions.content = `
-        <img height="100px" width="100px" style="float:right" src="${marker.image}"/>
         <h3>${marker.store_name}</h3>
+		
+        <img height="100px" width="100px" style="float:right" src="${marker.image ? marker.image : 'https://vnztech.com/demo/wp-content/uploads/2021/08/31-5830.jpeg'}"/>
         <br />
         ${marker.description}
 		<br />
-		<a href="${marker.link_web}">chi tiết</a>
+		<a href="${marker.link_web ? marker.link_web : 'http://vnztech.com/demo/'}" target=_blank>chi tiết</a>
         `;
 
 				//check if its the same marker that was selected if yes toggle

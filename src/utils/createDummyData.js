@@ -69,6 +69,20 @@ const link_web =[
   "https://vnztech.com/demo/top-10-di-tich-lich-su-o-ha-noi-ban-nhat-dinh-phai-kham-pha/",
   "https://vnztech.com/demo/tai-nguyen-di-san-cua-ha-noi-tiem-nang-can-khoi-day/"
 ]
+
+const title =[
+"Sed ut perspiciatis unde omnis iste natus ",
+ "Accusantium doloremque laudantium", 
+ "Veritatis et quasi architecto beatae vitae ", 
+ "Nemo enim ipsam voluptatem quia voluptas", 
+ "Sed quia consequuntur magni dolores ", 
+ "Neque porro quisquam est, qui dolorem ",
+  "Adipisci velit, sed quia non numquam eius ",
+   "Et dolore magnam aliquam quaerat voluptatem", 
+   "Quis nostrum exercitationem ullam corporis ", 
+   "Nisi ut aliquid ex ea commodi consequatur ",
+]
+
 const maxLat = 21.06;
 const minLat = 20.9;
 const maxLong = 105.95;
@@ -88,7 +102,7 @@ export function createDummyData() {
     // dummy.simistorelocator_id = 1;
     dummy.latitude = getRandom(minLat, maxLat);
     dummy.longitude = getRandom(minLong, maxLong);
-    dummy.store_name = "test Google Map name " + i;
+    dummy.store_name = title[getRandomInt(0,9)] + i;
     dummy.address = i + "  Hanoi street address";
     dummy.baseimage_id = null;
     dummy.image = image[getRandomInt(0, 4)];
