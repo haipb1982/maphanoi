@@ -48,7 +48,7 @@
 
 		<div class="row m-0 main-map">
 			<div class="col-map">
-				<GmapMap :zoom="13" :center="center" style="width: 100%; height: 100%">
+				<GmapMap :zoom="mapZoom" :center="mapCenter" style="width: 100%; height: 100%">
 					<gmap-info-window
 						:options="infoOptions"
 						:position="infoWindowPos"
@@ -69,14 +69,14 @@
 			<div class="col-result">
 				<div class="storelocator-search">
 					<div class="storelocator-search-result">
-						<div class="storelocator-result-heading" style="background:#000;">Kết quả tìm kiếm</div>
+						<div class="storelocator-result-heading" style="background:#000;">{{ searchResultTitle }}</div>
 						<div class="storelocator-search-result-box">
 							<div
 								class="storelocator-search-result-item"
 								v-for="(data, index) in markersLoad"
 								:key="index"
-								@click="indexActive = data.id_detail"
-								:class="indexActive == data.id_detail ? 'active' : ''"
+								@click="showLocation(data.id_detail)"
+								
 							>
 								<div class="item-left">
 									<div class="image">																				
@@ -129,7 +129,8 @@
 				isHaveSearch: true,
 				quan: quan,
 				phuong: phuong,
-				center: { lat: 21.027866815220005, lng: 105.83394801948478 },
+				mapCenter: { lat: 21.027866815220005, lng: 105.83394801948478 },
+        mapZoom: 13,
 				isquan: null,
 				isphuong: null,
 				infoWinOpen: false,
@@ -223,7 +224,8 @@
 				is_ditich: null,
 				is_disan: null,
 				is_lehoi: null,
-				imageDefault : 'https://vnztech.com/demo/wp-content/uploads/2021/08/31-5830.jpeg'
+				imageDefault : 'https://vnztech.com/demo/wp-content/uploads/2021/08/31-5830.jpeg',
+				searchResultTitle : "Kết quả tìm kiếm"
 			};
 		},
 		computed: {
@@ -231,7 +233,7 @@
 			google: gmapApi,
 		},
 		mounted() {
-			console.log("$route.params.maptype ", this.$route.params.maptype )
+			// console.log("$route.params.maptype ", this.$route.params.maptype )
 			this.geolocate();
 			this.markers = this.mapdata;
 			this.markersLoad = this.mapdata;
@@ -240,37 +242,57 @@
 		created() {
 			// console.log("maptype", this.$route.params["maptype"]);
 			// console.log("path", this.$route.path);
-			// console.log("center", this.center)
 
 			// this.maptype = this.$route.params["maptype"];
 			let path = this.$route.path;
 
-			console.log("path",path)
+			// console.log("path",path)
 
 			switch (path) {
 				case "/ditich.html":
+					this.maptype = 'ditich';
 					this.mapdata = ditichJson.default;
 					// console.log("ditichJson",ditichJson.default)
+					this.searchResultTitle = "Kết quả tìm kiếm";
 					break;
 				case "/thamquanao.html":
+					this.maptype = 'thamquanao';
 					this.mapdata = thamquanaoJson.default;
 					this.isHaveFilter = false;
 					this.isHaveSearch = false;
+					this.searchResultTitle = "Danh sách tham quan ảo";
 					// console.log("thamquanaoJson",thamquanaoJson.default)
 					break;
 				default:
+					this.maptype = 'disanvanhoa';
 					// console.log("disanvanhoaJson",disanvanhoaJson.default)
 					this.mapdata = disanvanhoaJson.default;
+					this.searchResultTitle = "Kết quả tìm kiếm";
 			}
 
 			this.mapdata = this.mapdata.concat(createDummyData());
 
-			console.log("created", this.mapdata);
+			// console.log("created", this.mapdata);
 		},
 		methods: {
+      showLocation(id){
+        // console.log("showLocation",id)
+          let location = this.mapdata.filter((e) => e.id_detail == id);
+          this.markers = location;
+          this.toggleInfoWindow(this.markers[0],1)
+        // console.log("showLocation",location[0])
+
+				this.mapCenter = {
+					lat: Number(location[0].latitude),
+					lng: Number(location[0].longitude),
+				};
+
+        this.mapZoom = Number(location[0].zoom_level)
+				// console.log("showLocation detail", this.mapCenter);
+      },
 			geolocate() {
 				navigator.geolocation.getCurrentPosition((position) => {
-					this.center = {
+					this.mapCenter = {
 						lat: position.coords.latitude,
 						lng: position.coords.longitude,
 					};
@@ -280,8 +302,8 @@
 				var geocoder = new window.google.maps.Geocoder();
 				geocoder.geocode({ address: check }, (results, status) => {
 					if (status === "OK") {
-						this.center.lat = results[0].geometry.location.lat();
-						this.center.lng = results[0].geometry.location.lng();
+						this.mapCenter.lat = results[0].geometry.location.lat();
+						this.mapCenter.lng = results[0].geometry.location.lng();
 					}
 				});
 			},
@@ -299,6 +321,7 @@
 				this.markersLoad = data;
 			},
 			toggleInfoWindow(marker, idx) {
+        console.log("toggleInfoWindow",marker),idx;
 				this.infoWindowPos = this.positions(marker);
 				this.infoOptions.content = `
         <h3>${marker.store_name}</h3>
@@ -306,22 +329,30 @@
         <img height="100px" width="100px" style="float:right" src="${marker.image ? marker.image : 'https://vnztech.com/demo/wp-content/uploads/2021/08/31-5830.jpeg'}"/>
         <br />
         ${marker.description}
-		<br />
+		<br />`;
+		
+		let detaillink = `
 		<a href="${marker.link_web ? marker.link_web : 'http://vnztech.com/demo/'}" target=_blank>chi tiết</a>
         `;
+		if (this.maptype != 'disanvanhoa')
+		this.infoOptions.content += detaillink;
 
+
+this.infoWinOpen = true;
 				//check if its the same marker that was selected if yes toggle
-				if (this.currentMidx == idx) {
-					this.infoWinOpen = !this.infoWinOpen;
-				}
-				//if different marker set infowindow to open and reset current marker index
-				else {
-					this.infoWinOpen = true;
-					this.currentMidx = idx;
-				}
+				// if (this.currentMidx == idx) {
+				// 	this.infoWinOpen = !this.infoWinOpen;
+				// }
+				// //if different marker set infowindow to open and reset current marker index
+				// else {
+				// 	this.infoWinOpen = true;
+				// 	this.currentMidx = idx;
+				// }
 			},
 
 			positions(m) {
+
+        // console.log("positions",m)
 				return {
 					lat: m.latitude,
 					lng: m.longitude,
@@ -388,11 +419,11 @@
 			indexActive() {
 				this.markers = this.mapdata.filter((e) => e.id_detail == this.indexActive);
 
-				this.center = {
+				this.mapCenter = {
 					lat: Number(this.mapdata[0].latitude),
 					lng: Number(this.mapdata[0].longitude),
 				};
-				console.log("center detail", this.center);
+				console.log("center detail", this.mapCenter);
 			},
 			is_ditich() {
 				this.searchMarke();

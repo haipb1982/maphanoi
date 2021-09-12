@@ -64,8 +64,8 @@ const image =[
 ]
 
 const link_web =[
-  "https://vnztech.com/demo/portfolio/chua-mot-cot/",
-  "https://vnztech.com/demo/portfolio/trong-dong-dong-xa/",
+  "https://vnztech.com/demo/portfolios/chua-mot-cot/",
+  "https://vnztech.com/demo/tai-nguyen-di-san-cua-ha-noi-tiem-nang-can-khoi-day/",
   "https://vnztech.com/demo/top-10-di-tich-lich-su-o-ha-noi-ban-nhat-dinh-phai-kham-pha/",
   "https://vnztech.com/demo/tai-nguyen-di-san-cua-ha-noi-tiem-nang-can-khoi-day/"
 ]
@@ -102,6 +102,7 @@ export function createDummyData() {
     // dummy.simistorelocator_id = 1;
     dummy.latitude = getRandom(minLat, maxLat);
     dummy.longitude = getRandom(minLong, maxLong);
+    dummy.zoom_level = 13;
     dummy.store_name = title[getRandomInt(0,9)] + i;
     dummy.address = i + "  Hanoi street address";
     dummy.baseimage_id = null;
