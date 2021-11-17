@@ -113,7 +113,7 @@
 	import * as disanvanhoaJson from "@/libs/disanvanhoa.json";
 	import * as ditichJson from "@/libs/ditich.json";
 	import * as thamquanaoJson from "@/libs/thamquanao.json";
-	import { createDummyData } from "@/utils/createDummyData";
+	// import { createDummyData } from "@/utils/createDummyData";
 
 	const quan = quanJson.default;
 	const phuong = phuongJson.default;
@@ -270,7 +270,7 @@
 					this.searchResultTitle = "Kết quả tìm kiếm";
 			}
 
-			this.mapdata = this.mapdata.concat(createDummyData());
+			// this.mapdata = this.mapdata.concat(createDummyData());
 
 			// console.log("created", this.mapdata);
 		},
