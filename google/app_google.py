@@ -121,6 +121,8 @@ def getGoogleSheet():
 
 
 # main
+# crontab -e
+# cd ~/public_html/ban-do-so/json && python3 app_google.py >> log.txt
 if __name__ == "__main__":
     print('rock!!!')
     getGoogleSheet()
