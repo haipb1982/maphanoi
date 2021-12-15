@@ -279,6 +279,8 @@ export default {
           axios.get("json/ditich.json").then((response) => {
             console.log("json", response.data);
             this.mapdata = response.data;
+            this.markers = this.mapdata;
+            this.markersLoad = this.mapdata;
           });
           // console.log("ditichJson",ditichJson.default)
           this.searchResultTitle = "Kết quả tìm kiếm";
@@ -289,6 +291,8 @@ export default {
           axios.get("json/thamquanao.json").then((response) => {
             console.log("json", response.data);
             this.mapdata = response.data;
+            this.markers = this.mapdata;
+            this.markersLoad = this.mapdata;
           });
 
           this.isHaveFilter = false;
@@ -303,6 +307,8 @@ export default {
           axios.get("json/disanvanhoa.json").then((response) => {
             console.log("json", response.data);
             this.mapdata = response.data;
+            this.markers = this.mapdata;
+            this.markersLoad = this.mapdata;
           });
           this.searchResultTitle = "Kết quả tìm kiếm";
       }
@@ -311,8 +317,6 @@ export default {
 
       console.log("initMap", this.mapdata);
 
-      this.markers = this.mapdata;
-      this.markersLoad = this.mapdata;
       this.dataPhuong = this.phuong;
     },
     showLocation(id) {
@@ -439,11 +443,6 @@ export default {
 
       this.markers = data;
       this.markersLoad = data;
-    },
-    async loadJson(filename) {
-      const baseUrl = process.env.BASE_URL;
-      console.log("loadJson", baseUrl);
-      return await this.someHttpClient.get(`${baseUrl}/${filename}`);
     },
   },
 
