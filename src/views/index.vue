@@ -2,21 +2,21 @@
   <div class="storelocator-top open">
     <div class="row filter-nav m-0" v-if="isHaveFilter">
       <div class="left">
-        <select class="form-control" v-model="isquan">
+        <select class="form-control" v-model="selected_quan" v-on:change="changeFilter">
           <option :value="null">Quận/Huyện</option>
           <option v-for="(p, index) in quan" :key="index" :value="p.id">
             {{ p.name }}
           </option>
         </select>
 
-        <select class="form-control" v-model="isphuong">
+        <select class="form-control" v-model="selected_phuong" v-on:change="changeFilter">
           <option :value="null">Phường/Xã</option>
           <option v-for="(p, index) in dataPhuong" :key="index" :value="p.id">
             {{ p.name }}
           </option>
         </select>
 
-        <select class="form-control" v-model="is_ditich">
+        <select class="form-control" v-model="selected_ditich" v-on:change="changeFilter">
           <option :value="null">Di tích xếp hạng</option>
           <option
             v-for="(p, index) in ditichxephang"
@@ -27,14 +27,14 @@
           </option>
         </select>
 
-        <select class="form-control" v-model="is_disan">
+        <select class="form-control" v-model="selected_disan" v-on:change="changeFilter">
           <option :value="null">Di sản</option>
           <option v-for="(p, index) in disan" :key="index" :value="p.id">
             {{ p.name }}
           </option>
         </select>
 
-        <select class="form-control" v-model="is_lehoi">
+        <select class="form-control" v-model="selected_lehoi" v-on:change="changeFilter">
           <option :value="null">Lễ hội</option>
           <option v-for="(p, index) in lehoi" :key="index" :value="p.id">
             {{ p.name }}
@@ -148,8 +148,9 @@ export default {
       phuong: phuong,
       mapCenter: { lat: 21.027866815220005, lng: 105.83394801948478 },
       mapZoom: 13,
-      isquan: null,
-      isphuong: null,
+      searchFilter:{},
+      selected_quan: null,
+      selected_phuong: null,
       infoWinOpen: false,
       dataPhuong: [],
       check: null,
@@ -238,9 +239,9 @@ export default {
           id: 2,
         },
       ],
-      is_ditich: null,
-      is_disan: null,
-      is_lehoi: null,
+      selected_ditich: null,
+      selected_disan: null,
+      selected_lehoi: null,
       imageDefault:
         "https://vnztech.com/demo/wp-content/uploads/2021/08/31-5830.jpeg",
       searchResultTitle: "Kết quả tìm kiếm",
@@ -406,33 +407,38 @@ export default {
       };
     },
     searchMarke() {
-      console.log("searchMarke", this.mapdata);
+      // console.log("searchMarke", this.mapdata);
 
-      let filter = {
-        city: this.isquan,
-      };
+      // console.log("searchMarke", this.searchFilter);
 
-      if (this.is_ditich) {
-        filter.xep_hang = this.is_ditich;
+      let filter = {}
+      // console.log(filter)
+
+      if (this.selected_ditich) {
+        filter.xep_hang = this.selected_ditich;
       }
 
-      if (this.is_disan) {
-        filter.loai_hinh = this.is_disan;
+      if (this.selected_disan) {
+        filter.loai_hinh = this.selected_disan;
       }
 
-      if (this.is_lehoi) {
-        filter.le_hoi = this.is_lehoi;
+      if (this.selected_lehoi) {
+        filter.le_hoi = this.selected_lehoi;
       }
 
-      if (this.isphuong) {
-        filter.simistorelocator_id = this.isphuong;
+      if (this.selected_quan) {
+        filter.city = this.selected_quan;
+      }
+
+      if (this.selected_phuong) {
+        filter.phuong = this.selected_phuong;
       }
 
       if (filter.city == null) {
         delete filter.city;
       }
 
-      console.log(filter, this.mapdata);
+      console.log('filter here',filter);
       let data = this.mapdata.filter(function (item) {
         for (var key in filter) {
           if (item[key] == null || item[key] == "" || item[key] != filter[key])
@@ -444,24 +450,36 @@ export default {
       this.markers = data;
       this.markersLoad = data;
     },
+    changeFilter(){
+      console.log('changeFilter!!!',this.searchFilter)
+      // this.searchMarke();
+    }
   },
 
   watch: {
-    isquan() {
-      let vm = this;
-      if (vm.isquan == null) {
-        this.dataPhuong = vm.phuong;
+    selected_quan() {
+      if (this.selected_quan == null) {
+        this.dataPhuong = this.phuong;
       } else {
-        vm.dataPhuong = vm.phuong.filter((e) => e.districtID == this.isquan);
+        this.selected_phuong = null
+        this.searchFilter.selected_quan = this.selected_quan
+        this.searchFilter.selected_phuong = this.selected_phuong
+
+        this.dataPhuong = this.phuong.filter((e) => e.districtID == this.selected_quan);
       }
+
       this.searchMarke();
     },
-    isphuong() {
-      if (this.isquan != null) {
-        let nameSearch = this.quan.filter((e) => (e.id = this.isquan))[0].name;
-        console.log(nameSearch);
-        this.searchLocation(nameSearch);
+    selected_phuong() {
+      if (this.selected_quan != null) {
+        // console.log('selected_phuong',this.quan.filter((e) => (e.id = this.selected_quan)));
+        // let nameSearch = this.quan.filter((e) => (e.id = this.selected_quan))[0].name;
+        // console.log('selected_phuong',nameSearch);
+        // this.searchLocation(nameSearch);
       }
+      // this.searchMarke();
+      this.searchFilter.selected_phuong = this.selected_phuong
+
       this.searchMarke();
     },
     indexActive() {
@@ -475,13 +493,16 @@ export default {
       };
       console.log("center detail", this.mapCenter);
     },
-    is_ditich() {
+    selected_ditich() {
+      this.searchFilter.selected_ditich = this.selected_ditich
       this.searchMarke();
     },
-    is_disan() {
+    selected_disan() {
+      this.searchFilter.selected_disan = this.selected_disan
       this.searchMarke();
     },
-    is_lehoi() {
+    selected_lehoi() {
+      this.searchFilter.selected_lehoi = this.selected_lehoi
       this.searchMarke();
     },
   },
