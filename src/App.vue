@@ -29,7 +29,7 @@ export default {
   mounted(){
     // console.log("$route.params.maptype App ", this.$route.params.maptype )
     // this.$route.go('disanvanhoa')
-    this.$router.push({ name: 'disanvanhoa' })
+    this.$router.push({ name: 'thamquanao' })
   }
 };
 </script>

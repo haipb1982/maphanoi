@@ -27,6 +27,11 @@ const router = new VueRouter({
     // },
     // ...map,
     {
+      path: ROUTE_MAP.THAMQUAN,
+      name: "thamquan",
+      component: thamquan,
+    },
+    {
       path: ROUTE_MAP.DITICH,
       name: "ditich",
       component: ditich,
@@ -38,11 +43,7 @@ const router = new VueRouter({
       name: "disanvanhoa",
       component: disanvanhoa,
     },
-    {
-      path: ROUTE_MAP.THAMQUAN,
-      name: "thamquan",
-      component: thamquan,
-    },
+    
     // {
     //   path: "*",
     //   redirect: "error-404",

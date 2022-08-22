@@ -15,9 +15,10 @@ Vue.component('no-sidebar-layout',NoSidebar)
 Vue.config.productionTip = false
 import * as VueGoogleMaps from 'vue2-google-maps'
 
+// key dung duoc 22082022 AIzaSyAL3Fb3Dx2CrPOafknK63iF7KwP53OSLFo
 Vue.use(VueGoogleMaps, {
   load: {
-    key: 'AIzaSyAL3Fb3Dx2CrPOafknK63iF7KwP53OSLFo',
+    key: '',
     libraries: 'places',
     region: 'VI',
     language: 'vi',

@@ -15,6 +15,16 @@ def readJsonFile(filename):
         data = json.load(json_file)
     return data
 
+def fixDescription(ditich_data):
+    jsondata = []
+    for item in ditich_data:
+        des = "N\u0103m x\u00e2y d\u1ef1ng: " + item['since'] + "<br/>" 
+        des += "Gi\u1edbi thi\u1ec7u chung: " + item['information'] + "<br/>"
+        des += "L\u1ecbch s\u1eed h\u00ecnh th\u00e0nh: " + item['history']  
+        item['description'] = des
+        jsondata.append(item)
+
+    return jsondata
 
 def writeData(records_data, file_name):
     jsondata = []
@@ -46,8 +56,8 @@ def writeData(records_data, file_name):
 
                 jsondata.append(item)
         except Exception as ex:
-            print('Error: ',ex)
-            print('Data row FAILED: ', item )
+            print('Error while processing ',file_name ,ex)
+            print(' > Data row FAILED: ', item )
             
     
     writeFile(jsondata, file_name)
@@ -82,7 +92,7 @@ def getGoogleSheet():
         sheet_instance = sheet.get_worksheet(1)
         #  get all the records of the data
         records_data = sheet_instance.get_all_records()
-        writeData(records_data,'ditich.json')
+        writeData(fixDescription(records_data),'ditich.json')
     except Exception as ex:
         print('Error: ',ex)
         print('Create ditich.json FAILED!')
@@ -126,5 +136,12 @@ def getGoogleSheet():
 if __name__ == "__main__":
     print('rock!!!')
     getGoogleSheet()
+
+
+    # quan = readJsonFile('phuong_xa.json')
+    # phuong = readJsonFile('quan_huyen.json')
+
+    # for q in quan:
+    #     print(q['id'])
 
     print('DONE!!!')

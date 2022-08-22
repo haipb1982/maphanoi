@@ -87,12 +87,12 @@
                 :key="index"
                 @click="showLocation(data.id_detail)"
               >
-                <div class="item-left">
+                <div class="item-left" v-if="data.image">
                   <div class="image">
-                    <img v-if="data.image" :src="data.image" />
+                    <img v-if="data.image" :src="data.image" onerror="this.src='https://vnztech.com/error-imgage.svg;" />
                     <img
                       v-else
-                      src="https://vnztech.com/demo/wp-content/uploads/2021/08/31-5830.jpeg"
+                      src="https://vnztech.com/error-imgage.svg"
                     />
                   </div>
                 </div>
@@ -368,24 +368,83 @@ export default {
     toggleInfoWindow(marker, idx) {
       console.log("toggleInfoWindow", marker), idx;
       this.infoWindowPos = this.positions(marker);
+
+      let content_thamquanao = `
+      <div class="popup">
+        <center>
+        <h3>${marker.store_name}</h3>
+		
+        <img width="250px" src="${
+          marker.image
+            ? marker.image
+            : "https://vnztech.com/error-imgage.svg"
+        }"/>
+        ${marker.address ? "<br /><br />Địa chỉ: " + marker.address : ""} 
+        <br />
+        <br />
+        <br />
+		<a class="link-btn" href="${
+      marker.link_web ? marker.link_web : "http://vnztech.com/demo/"
+    }" target=_blank>Tham quan ảo</a>
+    <br />
+    <br />
+    <br />
+    </center>
+    </div>
+      `;
+
+      let content_ditich = `
+      <div class="popup">
+        <h3>${marker.store_name}</h3>
+		
+        <img height="100px" width="100px" style="float:right" src="${
+          marker.image
+            ? marker.image
+            : "https://vnztech.com/error-imgage.svg"
+        }"/>
+        <br />
+        ${marker.description}
+		    <br />
+        <br />
+        <a style="color:blue" href="${
+          marker.link_web ? marker.link_web : "http://vnztech.com/demo/"
+        }" target=_blank>chi tiết</a>
+        <br />
+        </div>
+      `;
+
+      let content_disanvanhoa = `
+      <div class="popup">
+        <h3>${marker.store_name}</h3>
+		
+        <img height="100px" width="100px" style="float:right" src="${
+          marker.image
+            ? marker.image
+            : "https://vnztech.com/error-imgage.svg"
+        }"/>
+        <br />
+        ${marker.description}
+		    <br />
+        <br />
+        </div>
+      `;
+
       this.infoOptions.content = `
         <h3>${marker.store_name}</h3>
 		
         <img height="100px" width="100px" style="float:right" src="${
           marker.image
             ? marker.image
-            : "https://vnztech.com/demo/wp-content/uploads/2021/08/31-5830.jpeg"
+            : "https://vnztech.com/error-imgage.svg"
         }"/>
         <br />
         ${marker.description}
 		<br />`;
 
-      let detaillink = `
-		<a href="${
-      marker.link_web ? marker.link_web : "http://vnztech.com/demo/"
-    }" target=_blank>chi tiết</a>
-        `;
-      if (this.maptype != "disanvanhoa") this.infoOptions.content += detaillink;
+      if (this.maptype == "thamquanao") this.infoOptions.content = content_thamquanao;
+      if (this.maptype == "ditich") this.infoOptions.content = content_ditich;
+      if (this.maptype == "disanvahoa") this.infoOptions.content = content_disanvanhoa;
+
 
       this.infoWinOpen = true;
       //check if its the same marker that was selected if yes toggle
@@ -510,9 +569,20 @@ export default {
 </script>
 
 <style>
+.popup {
+  font-size: 15px;
+}
 .filter-nav {
   display: flex;
   justify-content: space-between;
   padding: 0 15px;
+}
+
+.link-btn {
+  background-color: #90090F;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 10px;
 }
 </style>
